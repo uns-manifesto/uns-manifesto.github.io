@@ -36,8 +36,8 @@
 </head>  
 <body>  
     <ul class="menu">  
-        <li><a href="UNS_French.html">Item 1</a></li>  
-        <li><a href="UNS_English.html">Item 2</a></li>  
+        <li><a href="UNS_French.html">Français</a></li>  
+        <li><a href="UNS_English.html">Anglais</a></li>  
     </ul>  
     <p id="greeting" class="green-text">Hello World</p>  
     <button onclick="swapText()">Swap Text</button>  
