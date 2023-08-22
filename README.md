@@ -1,3 +1,4 @@
+<!DOCTYPE html>  
 <html>  
 <head>  
     <title>Hello World</title>  
@@ -8,6 +9,10 @@
         }  
         .green-text {  
             color: green;  
+            font-weight: bold;  
+        }  
+        .orange-text {  
+            color: orange;  
             font-weight: bold;  
         }  
         .menu {  
@@ -31,8 +36,8 @@
 </head>  
 <body>  
     <ul class="menu">  
-        <li>Item 1</li>  
-        <li>Item 2</li>  
+        <li><a href="UNS_French.html">Item 1</a></li>  
+        <li><a href="UNS_English.html">Item 2</a></li>  
     </ul>  
     <p id="greeting" class="green-text">Hello World</p>  
     <button onclick="swapText()">Swap Text</button>  
@@ -41,8 +46,10 @@
             var greeting = document.getElementById("greeting");  
             if (greeting.innerHTML === "Hello World") {  
                 greeting.innerHTML = "Bonjour Monde";  
+                greeting.className = "orange-text";  
             } else {  
                 greeting.innerHTML = "Hello World";  
+                greeting.className = "green-text";  
             }  
         }  
     </script>  
