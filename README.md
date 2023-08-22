@@ -1,7 +1,6 @@
-<!DOCTYPE html>  
 <html>  
 <head>  
-    <title>Hello World Vince & Benoit </title>  
+    <title>Hello World</title>  
     <style>  
         body {  
             font-family: Arial, sans-serif;  
@@ -16,7 +15,12 @@
             justify-content: space-around;  
             list-style-type: none;  
             padding: 0;  
-            margin: 0;  
+            margin-bottom: 20px;  
+        }  
+        .menu li {  
+            background-color: #f8f9fa;  
+            padding: 10px 20px;  
+            border-radius: 5px;  
         }  
         @media (max-width: 600px) {  
             .menu {  
