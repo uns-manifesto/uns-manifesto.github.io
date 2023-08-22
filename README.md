@@ -40,6 +40,11 @@
     </ul>  
     <p id="greeting" class="green-text">Hello World</p>  
     <button onclick="swapText()">Swap Text</button>  
+
+
+    Signatories : 
+    * Vincent Thavonekham, 2023 08 23
+    * Benoit Prieur, 2023 08 23
     <script>  
         function swapText() {  
             var greeting = document.getElementById("greeting");  
