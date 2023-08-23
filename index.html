@@ -1,3 +1,4 @@
+<!DOCTYPE html>  
 <html>      
 <head>      
     <title>Hello World</title>      
@@ -51,7 +52,7 @@
     <p id="greeting" class="green-text">Hello World</p>      
     <button onclick="swapText()">Swap Text</button>      
     <button> <a href="https://forms.gle/ZYyshTAYa29ZqJA29" target="_blank"> Sign ! </a></button>  
-    <button> <a href=" https://docs.google.com/spreadsheets/d/e/2PACX-1vR0wWLm4GUCfr8c8EAzEcaJBkS00FGaJ9GnP9kziSYvS4bWG-6S4wOCyoGlZuwOCdoTB49YvpPaE9rk/pubhtml?gid=380079388&amp;single=true&amp;widget=true&amp;headers=false" target="_blank"> List of Signatories </a></button>  
+    <button> <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vR0wWLm4GUCfr8c8EAzEcaJBkS00FGaJ9GnP9kziSYvS4bWG-6S4wOCyoGlZuwOCdoTB49YvpPaE9rk/pubhtml?gid=380079388&amp;single=true&amp;widget=true&amp;headers=false" target="_blank"> List of Signatories </a></button>  
       
     <p>Top 20 first Signatories :  
     * 2023 08 23, Vincent Thavonekham  
@@ -60,6 +61,7 @@
     <table id="googleSheetTable">  
         <!-- Table data will go here -->  
     </table>  
+  
     <script>      
         function swapText() {      
             var greeting = document.getElementById("greeting");      
@@ -72,34 +74,22 @@
             }      
         }      
   
-        // Your public Google Sheets URL structured as JSON  
-        var googleSheetURI = 'https://spreadsheets.google.com/feeds/list/1ZHoZySyRA8nLRi0pUZilrGsoNPKTd8a0OYJt_kJlKbU/od6/public/values?alt=json';  
-  
-        fetch(googleSheetURI)  
-        .then(response => response.json())  
+        fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vR0wWLm4GUCfr8c8EAzEcaJBkS00FGaJ9GnP9kziSYvS4bWG-6S4wOCyoGlZuwOCdoTB49YvpPaE9rk/pub?gid=380079388&single=true&output=csv')  
+        .then(response => response.text())  
         .then(data => {  
-            var rows = data.feed.entry;  
-  
-            var html = `<tr>`;  
-            for(var key in rows[0]) {  
-                if(key.startsWith('gsx$')) {  
-                    html += `<th>${key.substring(4)}</th>`;  
-
-                                }  
-            }  
-            html += `</tr>`;  
-  
+            const table = document
+            const table = document.getElementById('googleSheetTable');  
+            const rows = data.split('\n');  
             rows.forEach(row => {  
-                html += `<tr>`;  
-                for(var key in row) {  
-                    if(key.startsWith('gsx$')) {  
-                        html += `<td>${row[key].$t}</td>`;  
-                    }  
-                }  
-                html += `</tr>`;  
+                const cols = row.split(',');  
+                const tr = document.createElement('tr');  
+                cols.forEach(col => {  
+                    const td = document.createElement('td');  
+                    td.textContent = col;  
+                    tr.appendChild(td);  
+                });  
+                table.appendChild(tr);  
             });  
-  
-            document.getElementById('googleSheetTable').innerHTML = html;  
         });  
     </script>      
 </body>      
