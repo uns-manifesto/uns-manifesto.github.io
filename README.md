@@ -34,9 +34,11 @@
     </style>    
 </head>    
 <body>    
+    <!-- Alphabetical order-->
     <ul class="menu">    
-        <li><a href="UNS_French.html">Français</a></li>    
-        <li><a href="UNS_English.html">Anglais</a></li>
+        <li><a href="UNS-EN.html">English</a></li>    
+        <li><a href="UNS-FR.html">Français</a></li>
+        <li><a href="UNS-Signatories.html">Signatories-Signataires</a></li>
     </ul>    
     <p id="greeting" class="green-text">Hello World</p>    
     <button onclick="swapText()">Swap Text</button>    
