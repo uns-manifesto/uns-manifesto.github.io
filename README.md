@@ -36,15 +36,17 @@
 <body>    
     <ul class="menu">    
         <li><a href="UNS_French.html">Français</a></li>    
-        <li><a href="UNS_English.html">Anglais</a></li>    
-        <li><a href="#"><iframe src="[YOUR_PUBLISHED_GOOGLE_SHEET_LINK_HERE](https://docs.google.com/spreadsheets/d/1fFfL4rwlw4ma0uxxYQPquoQY0zfFYDOrMytqiIF0TiI/edit?usp=sharing)" width="100%" height="500"></iframe></a></li>  
+        <li><a href="UNS_English.html">Anglais</a></li>
     </ul>    
     <p id="greeting" class="green-text">Hello World</p>    
     <button onclick="swapText()">Swap Text</button>    
-    <button> <a href="https://forms.gle/7FtuUKGRoCt2Gm9D6"> Sign ! </a></button>
-    Signatories :   
-    * Vincent Thavonekham, 2023 08 23  
-    * Benoit Prieur, 2023 08 23  
+    <button> <a href="https://forms.gle/7FtuUKGRoCt2Gm9D6" target="_blank"> Sign ! </a></button>
+    <button> <a href="https://docs.google.com/spreadsheets/d/1fFfL4rwlw4ma0uxxYQPquoQY0zfFYDOrMytqiIF0TiI" target="_blank"> List of Signatories </a></button>
+    
+    <p>Top 20 first Signatories :
+    * 2023 08 23, Vincent Thavonekham
+    * 2023 08 23, Benoit Prieur
+    </p>
     <script>    
         function swapText() {    
             var greeting = document.getElementById("greeting");    
