@@ -1,96 +1,60 @@
-<!DOCTYPE html>  
 <html>      
 <head>      
-    <title>Hello World</title>      
-    <style>      
-        body {      
-            font-family: Arial, sans-serif;      
-            padding: 20px;      
-        }      
-        .green-text {      
-            color: green;      
-            font-weight: bold;      
-        }      
-        .orange-text {      
-            color: orange;      
-            font-weight: bold;      
-        }      
-        .menu {      
-            display: flex;      
-            justify-content: space-around;      
-            list-style-type: none;      
-            padding: 0;      
-            margin-bottom: 20px;      
-        }      
-        .menu li {      
-            background-color: #f8f9fa;      
-            padding: 10px 20px;      
-            border-radius: 5px;      
-        }  
-        table {   
-            width: 100%;   
-            border-collapse: collapse;   
-        }  
-        th, td {   
-            padding: 8px;   
-            text-align: left;   
-            border-bottom: 1px solid #ddd;   
-        }  
-        @media (max-width: 600px) {      
-            .menu {      
-                flex-direction: column;      
-            }      
-        }      
-    </style>      
+    <title>UNS Manifesto - Article</title>      
+    <link rel="stylesheet" type="text/css" href="css/styles.css">   
 </head>      
 <body>      
     <!-- Alphabetical order-->  
     <ul class="menu">      
-        <li><a href="UNS-EN.html">English</a></li>      
-        <li><a href="UNS-FR.html">Français</a></li>  
+        <li><a href="UNS-EN.html">English Text only</a></li>      
+        <li><a href="UNS-FR.html">Français seulement</a></li>  
     </ul>      
-    <p id="greeting" class="green-text">Hello World</p>      
-    <button onclick="swapText()">Swap Text</button>      
+    
+    <button onclick="swapText()">English / Français</button>      
     <button> <a href="https://forms.gle/ZYyshTAYa29ZqJA29" target="_blank"> Sign ! </a></button>  
-    <button> <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vR0wWLm4GUCfr8c8EAzEcaJBkS00FGaJ9GnP9kziSYvS4bWG-6S4wOCyoGlZuwOCdoTB49YvpPaE9rk/pubhtml?gid=380079388&amp;single=true&amp;widget=true&amp;headers=false" target="_blank"> List of Signatories </a></button>  
+    <button onclick="openBlankPageWithSignatories()"> List of Signatories </a></button>  
       
-    <p>Top 20 first Signatories :  
-    * 2023 08 23, Vincent Thavonekham  
-    * 2023 08 23, Benoit Prieur  
+    <p> <a id="greeting" class="green-text">English_</a>      
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
+        Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
+        Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.
+        Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.
+        
+        
     </p>  
-    <table id="googleSheetTable">  
+
         <!-- Table data will go here -->  
-    </table>  
+        <iframe id="myIframe" style="width:80%; height:50%;"></iframe>  
   
     <script>      
-        function swapText() {      
+
+        const myURL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR0wWLm4GUCfr8c8EAzEcaJBkS00FGaJ9GnP9kziSYvS4bWG-6S4wOCyoGlZuwOCdoTB49YvpPaE9rk";  
+        const optionNewHTMLPage="/pubhtml?gid=380079388&amp;single=true&amp;widget=true&amp;headers=false";
+        const optionCSV = "/pub?gid=380079388&single=true&output=csv";
+
+
+        // document.getElementById('myIframe').src = myURL + optionCSV ;  
+        document.getElementById('myIframe').src = myURL + optionNewHTMLPage ;  
+
+        function openBlankPageWithSignatories()
+        {
+            // window.open(myURL + optionCSV, '_blank');  
+            window.open(myURL + optionNewHTMLPage, '_blank');  
+        }
+
+        function swapText() 
+        {      
             var greeting = document.getElementById("greeting");      
-            if (greeting.innerHTML === "Hello World") {      
-                greeting.innerHTML = "Bonjour Monde";      
+            if (greeting.innerHTML === "English_") {      
+                greeting.innerHTML = "Français_";      
                 greeting.className = "orange-text";      
             } else {      
-                greeting.innerHTML = "Hello World";      
+                greeting.innerHTML = "English_";      
                 greeting.className = "green-text";      
             }      
-        }      
-  
-        fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vR0wWLm4GUCfr8c8EAzEcaJBkS00FGaJ9GnP9kziSYvS4bWG-6S4wOCyoGlZuwOCdoTB49YvpPaE9rk/pub?gid=380079388&single=true&output=csv')  
-        .then(response => response.text())  
-        .then(data => {  
-            const table = document
-            const table = document.getElementById('googleSheetTable');  
-            const rows = data.split('\n');  
-            rows.forEach(row => {  
-                const cols = row.split(',');  
-                const tr = document.createElement('tr');  
-                cols.forEach(col => {  
-                    const td = document.createElement('td');  
-                    td.textContent = col;  
-                    tr.appendChild(td);  
-                });  
-                table.appendChild(tr);  
-            });  
-        });  
+        }     
+
     </script>      
 </body>      
 </html>    
