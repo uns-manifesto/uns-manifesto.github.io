@@ -1,0 +1,38 @@
+body {      
+    font-family: Arial, sans-serif;      
+    padding: 20px;      
+}      
+.green-text {      
+    color: green;      
+    font-weight: bold;      
+}      
+.orange-text {      
+    color: orange;      
+    font-weight: bold;      
+}      
+.menu {      
+    display: flex;      
+    justify-content: space-around;      
+    list-style-type: none;      
+    padding: 0;      
+    margin-bottom: 20px;      
+}      
+.menu li {      
+    background-color: #f8f9fa;      
+    padding: 10px 20px;      
+    border-radius: 5px;      
+}  
+table {   
+    width: 100%;   
+    border-collapse: collapse;   
+}  
+th, td {   
+    padding: 8px;   
+    text-align: left;   
+    border-bottom: 1px solid #ddd;   
+}  
+@media (max-width: 600px) {      
+    .menu {      
+        flex-direction: column;      
+    }      
+}      
