@@ -1,81 +1,243 @@
-body {
-    background-color: black;
-    color: white;
-    font-family: Arial, sans-serif;      
-    padding: 20px;  
-  }
-
-  table {
-    border-collapse: collapse;
-    width: 100%;
-    border: 1px solid white;
-  }
-  
-  th, td {
-    border: 0px solid white;
-    padding: 8px;
-    text-align: center;
-  }
-  
-  .button {
-    display: inline-block;
-    padding: 10px 20px;
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #444;
-    color: white; 
-    border-radius: 200px; 
-    text-decoration: none; 
-    text-align: center;
-    cursor: pointer;
-  }
-  
-  .button:hover {
-    background-color: #444; 
-    color: #fff; 
-  }
-  
-.green-text {      
-    color: green;      
-    font-weight: bold;      
-}      
-.orange-text {      
-    color: orange;      
-    font-weight: bold;      
-}      
-.menu {      
-    display: flex;      
-    justify-content: space-around;      
-    list-style-type: none;      
-    padding: 0;      
-    margin-bottom: 20px;      
-}      
-.menu li {      
-    background-color: #f8f9fa;      
-    padding: 10px 20px;      
-    border-radius: 5px;      
+body::after {  
+  content: "";  
+  background: url("../images/background.jpg") no-repeat center center fixed;   
+  -webkit-background-size: cover;  
+  -moz-background-size: cover;  
+  -o-background-size: cover;  
+  background-size: cover;  
+  opacity: 0.5;  
+  top: 0;  
+  left: 0;  
+  bottom: 0;  
+  right: 0;  
+  position: absolute;  
+  z-index: -1;     
 }  
 
-@media (max-width: 600px) {      
-    .menu {      
-        flex-direction: column;      
-    }      
-}      
 
-a:link {
-    color: whitesmoke;
-    background-color: transparent;
-    text-decoration: none;
+/* Basic Styling */  
+body {  
+  padding-top: 100px; /* Adjust this value based on the height of your header */
+  font-family: "Segoe UI", Arial, sans-serif;  
+  margin: 0;  
+  padding: 1;  
+  margin-left:2em; 
+  margin-right:2em; 
+  position: relative; 
+}  
+
+#searchBox {  
+  border: 2px solid black;  
+  padding: 10px;  
+  background-color: pink; /* Add this line */  
+  width: 350px;
+}  
+
+/* HEADER */
+header {  
+  font-family: "Segoe UI", Arial, sans-serif;  
+  position: relative;
+  background: #fff;
+  background-color: white;  
+  padding: 20px;  
+  display: flex;  
+  align-items: center;  
+  padding: 20px;  
+  display: flex;  
+  height: 60px; 
+  align-items: center;  
+
+  position: fixed;  
+  top: 0;  
+  width: 100%;  
+  z-index: 101; 
+}  
+header h1 {  
+  font-size: 24px;  
+}  
+
+
+header img {  
+  margin-right: 20px;  
+}  
+
+
+/* Basic Menu */ 
+
+#Resx_Home {  
+  box-sizing: border-box;  
+}  
+
+nav {  
+  position: fixed;  
+  top: 100px; /* Adjust this based on the height of your header */  
+  width: 100%;  
+  z-index: 101;  
+  background-color: steelblue;
+  margin-left:-2em;
+} 
+
+.nav-menu {  
+  color:steelblue; 
+}  
+
+.nav-menu a {  
+  color: white; /* Change this to your desired green hex color white */  
+  text-decoration: none; /* This will remove the underline from the text */  
+}  
+.nav-menu a {  
+  display: block;  
+  padding: 0 10px;  
+}  
+
+
+.nav-menu a:hover {  
+  text-decoration: underline; /* This will underline the text when hovered over */  
+}
+
+.nav-menu > li:hover .dropdown {  
+  display: block;  
+}  
+
+.nav-menu, .nav-menu ul {  
+  list-style-type: none;  
+  padding: 0;  
+}  
+
+.nav-menu > li {  
+  display: inline-block;  
+  position: relative;  
+} 
+
+nav ul {  
+  list-style-type: none;  
+  padding: 0;  
+}  
+
+nav ul li {  
+  display: inline-block;  
+  margin-right: 20px;  
+}  
+
+@media (max-width: 600px) {  
+  nav ul li {  
+      display: block;  
+      margin-bottom: 10px;  
+  }  
+}  
+
+
+/* Dropdown Styling */  
+.dropdown {  
+  display: none;  
+  position: absolute;  
+  min-width: 160px;  
+  z-index: 1;  
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  
+  background-color: #f9f9f9;  
+}  
+
+.dropdown a {  
+  color: black;  
+  padding: 12px 16px;  
+  text-decoration: none;  
+  display: block;  
+}  
+
+
+.outer-section {  
+  background-color: #EBEBEB; /* This will make the background of the section light grey */  
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* This will add a dropped shadow */  
+  padding: 20px; /* This adds some space around your content inside the section */  
+  margin-bottom: 20px; /* This adds some space between sections */  
+}  
+
+section {  
+  background-color:white; /* This will make the background of the section light grey */  
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* This will add a dropped shadow */  
+  padding: 20px; /* This adds some space around your content inside the section */  
+  margin-bottom: 20px; /* This adds some space between sections */  
+}  
+
+section h2 {  
+  color: steelblue; 
+} 
+
+section::before {  
+  content: "";  
+  display: block;  
+  height: 1em; /* Adjust this to match the height of your header */  
+  margin: -8px 0 0; /* This negative margin is the same as the height */  
+}
+
+
+a.linkedin {  
+  color: blue;  
+}  
+
+.btn {  
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+  position: relative;  
+  padding: 10px;  
+  background-color: #742774;  
+  color: white;  
+  border: none;  
+  border-radius: 5px;  
+  cursor: pointer;  
+  text-decoration: none;  
+  font-size: 16px;  
+  margin-bottom: 1em;
+}  
+
+
+/* Footer */
+footer {  
+  background-color: lightgrey;  
+  display: flex;  
+  justify-content: space-between;  
+  align-items: center;  
+  padding: 20px;  
+}  
+
+footer img {  
+  margin-right: 20px;  
+}  
+
+footer p, footer a {  
+  color: steelblue;  
+}   
+
+
+/* Responsive Design */  
+@media (max-width: 600px) {  
+  .nav-menu > li {  
+      display: block;  
+      margin-bottom: 10px;  
+  }  
+
+  .nav-menu a {  
+      display: block;  
+      padding: 10px;  
+  }  
+
+  .dropdown {  
+      position:absolute;  
+      display:flexbox;
   }
-  
-  a:visited {
-    color: whitesmoke;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: pink;
-    background-color: transparent;
-    text-decoration: underline;
-  }
+
+  html {  
+      scroll-behavior: smooth;  /* not always working, depending on browser */
+    }
+}
+
+.flex-container {  
+  display: flex;  
+  align-items: center; /* optional, to align items vertically in the center */  
+}  
+.flex-customerlist {  
+  display: flex;  
+  align-items: center; /* optional, to align items vertically in the center */  
+  flex-wrap: wrap;
+}  
