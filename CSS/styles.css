@@ -18,7 +18,8 @@ body::after {
 /* Basic Styling */  
 body {  
   padding-top: 100px; /* Adjust this value based on the height of your header */
-  font-family: "Segoe UI", Arial, sans-serif;  
+  /* font-family: "Segoe UI", Arial, sans-serif;   */ 
+  font-family: Roboto Slab, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   margin: 0;  
   padding: 1;  
   margin-left:2em; 
@@ -73,7 +74,7 @@ nav {
   top: 100px; /* Adjust this based on the height of your header */  
   width: 100%;  
   z-index: 101;  
-  background-color: steelblue;
+  background-color: #244c6e;
   margin-left:-2em;
 } 
 
@@ -84,6 +85,8 @@ nav {
 .nav-menu a {  
   color: white; /* Change this to your desired green hex color white */  
   text-decoration: none; /* This will remove the underline from the text */  
+  font-weight: 600;
+  transition: font-weight 0.3s ease; /* Add transition for a smooth effect */ 
 }  
 .nav-menu a {  
   display: block;  
@@ -91,8 +94,10 @@ nav {
 }  
 
 
-.nav-menu a:hover {  
-  text-decoration: underline; /* This will underline the text when hovered over */  
+.nav-menu a:hover,
+.nav-menu a:active {
+  /* text-decoration: underline;  This will underline the text when hovered over */  
+  font-weight: bold;
 }
 
 .nav-menu > li:hover .dropdown {  
@@ -146,7 +151,7 @@ nav ul li {
 
 
 .outer-section {  
-  background-color: #EBEBEB; /* This will make the background of the section light grey */  
+  background-color: #ffffff; /* This will make the background of the section light grey */  
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* This will add a dropped shadow */  
   padding: 20px; /* This adds some space around your content inside the section */  
   margin-bottom: 20px; /* This adds some space between sections */  
@@ -157,10 +162,11 @@ section {
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* This will add a dropped shadow */  
   padding: 20px; /* This adds some space around your content inside the section */  
   margin-bottom: 20px; /* This adds some space between sections */  
+  line-height: 1.75;
 }  
 
 section h2 {  
-  color: steelblue; 
+  color: rgb(47, 108, 158); 
 } 
 
 section::before {  
@@ -194,7 +200,7 @@ a.linkedin {
 
 /* Footer */
 footer {  
-  background-color: lightgrey;  
+  background-color: #1f66a338; 
   display: flex;  
   justify-content: space-between;  
   align-items: center;  
@@ -206,7 +212,8 @@ footer img {
 }  
 
 footer p, footer a {  
-  color: steelblue;  
+  color: #00315a;
+  font-size: normal;
 }   
 
 

@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Principes de l'UNS</title>
+    <title >Principes de l'UNS</title>
     <link rel="stylesheet" type="text/css" href="CSS/styles.css">
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
@@ -18,6 +18,24 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script/script.js"></script>
+    <script>
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section) {
+                var offset = 50; // Adjust this value based on your needs
+                var sectionPosition = section.offsetTop - offset;
+                window.scrollTo({ top: sectionPosition, behavior: 'smooth' });
+            }
+        }
+        function scrollToSection2(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section) {
+                var offset = 140; // Adjust this value based on your needs
+                var sectionPosition = section.offsetTop - offset;
+                window.scrollTo({ top: sectionPosition, behavior: 'smooth' });
+            }
+        }
+    </script>
 
 </head>
 
@@ -27,11 +45,11 @@
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <header>
-        <a href="#Resx_Home" style="margin-top: 1em; margin-left: -1.5em; margin-bottom: 1em;"><img
-                src="images/logo.png" alt="Logo" height="50em"></a>
-
-        <h1 style="color: steelblue;">Principes du Unified Namespace #UNS </h1>
+    <header style="background-color: white; padding: 20px; display: flex; align-items: center; position: fixed; top: 0; width: 100%; z-index: 101;">
+        <h1 style="color:#18619e; flex: 1; font-size: xx-large;">Principes du Unified Namespace #UNS </h1>
+        <a href="#Resx_Home" style="margin-top: 1em; margin-right: 1.5em;">
+            <img src="images/logo.png" alt="Logo" height="50em" style="margin-left: auto; margin-right: 2em;">
+        </a>
     </header>
     <br />
 
@@ -39,18 +57,18 @@
     <button class="button" onclick="openBlankPageWithSignatories()">List of Signatories</button>  
     <font size="+2"><a href="https://forms.gle/ZYyshTAYa29ZqJA29" target="_blank"><u>Sign!</u></a></font>   -->
 
-    <div>
+    <div style="text-align: center;">
         <nav>
-            <ul class="nav-menu">
-                <li><a href="#Resx_Home">Introduction</a></li>
+            <ul class="nav-menu" style="font-size: large;">
+                <li><a href="javascript:void(0);" onclick="scrollToSection('Resx_Home')">Introduction</a></li>
                 <li>
-                    <a href="#Resx_Definition">Définition de UNS</a>
+                    <a href="javascript:void(0);" onclick="scrollToSection('Resx_Definition')">Définition de UNS</a>
                 </li>
                 <li>
-                    <a href="#Resx_Why">Pourquoi l'UNS ?</a>
+                    <a href="javascript:void(0);" onclick="scrollToSection2('Resx_Why')">Pourquoi l'UNS ?</a>
                 </li>
-                <li><a href="#Resx_Principles">Fonctionnement </a></li>
-                <li><a href="#contact-us">Nous contacter</a></li>
+                <li><a href="javascript:void(0);" onclick="scrollToSection2('Resx_Principles')">Fonctionnement </a></li>
+                <li><a href="javascript:void(0);" onclick="scrollToSection('contact-us')">Nous contacter</a></li>
                 <li><a href="sources.html" target="_self">Sources</a></li>
                 <!-- <li><a href="#switchFrEn"><a href="#">
                             <img id="langBtn" src="images/flag_fr.png" alt="Switch to French" width="30px"></a>
@@ -60,11 +78,11 @@
 
     </div>
 
-    <section class="outer-section">
-        <div class="flex-container" style="margin-top:5em;">
-            <div>
-                <h2 id="Resx_Home">Introduction</h2>
-                <p id="Resx_Home_Text">
+    <section class="outer-section" id="Resx_Home">
+        <div class="flex-container" style="margin-top:7em;">
+            <div style="font-size: large; color: #414141;">
+                <h2 >Introduction</h2>
+                <p id="Resx_Home_Text" >
                     L'architecture Unified Namespace (UNS) s'est imposée comme l'architecture socle pour construire sa
                     transformation Digitale.
                     <br>Ce qui est frustrant c'est que si on ne connait pas UNS, alors l'expert va se raccrocher à des
@@ -79,9 +97,9 @@
         </div>
     </section>
 
-    <section class="outer-section">
-        <div class="flex-container">
-            <div>
+    <section class="outer-section"  style="margin-top:3em;">
+        <div class="flex-container" >
+            <div style="font-size: large; color: #414141;" id="Resx_Definition">
                 <a>Ce site donne des outils pour comprendre l'UNS, en reprennant notamment la définition de <a
                         href="sources.html" target="_self">Walker Reynolds</a> l'inventeur de l'UNS (cf onglet
                     'Sources') :
@@ -93,7 +111,7 @@
                 plusieurs indusrtriels qui sont les plus avancées sur le sujet."
 
 
-                <h2 id="Resx_Definition">1. Définition de Unified Namespace (UNS) ?</h2>
+                <h2 >1. Définition de Unified Namespace (UNS) ?</h2>
 
                 <ul>
                     <li>Il s'agit du schéma directeur qui va structurer de votre entreprise, englobant tous les types
@@ -114,11 +132,11 @@
 
     </section>
 
-    <section class="outer-section">
-        <div class="flex-container" id="Resx_Why">
+    <section class="outer-section" id="Resx_Why" style="margin-top:3em;">
+        <div class="flex-container" >
             <div>
-                <div class="flex-container">
-                    <div>
+                <div class="flex-container" >
+                    <div style="font-size: large; color: #414141;">
                         <h2>2. Pourquoi l'UNS et à quels besoins est-ce que cela répond ? </h2>
                         <ul>
                             <li>Pour une évolutivité d'entreprise qui s'adapte et se développe avec votre activité.</li>
@@ -134,10 +152,10 @@
 
     </section>
 
-    <section class="outer-section">
+    <section class="outer-section" id="Resx_Principles" style="margin-top:3em;">
         <div class="flex-container">
-            <div>
-                <h2 id="Resx_Principles">3. Fonctionnement</h2>
+            <div style="font-size: large; color: #414141;">
+                <h2>3. Fonctionnement</h2>
                 <ul>
                     <li>Les objets intelligents basés sur des protocoles de communications "classiques" s'intègrent
                         facilement tant qu'ils respectent les protocoles classiques de l' IIoT (Industrial Internet of
@@ -154,7 +172,7 @@
             </div>
         </div>
 
-        <section>
+        <section style="font-size: large; color: #414141;" style="margin-top:3em;">
             <h3>Prennons le cas de 2 usines d'un même groupe qui doit suivre en temps réel tous les événements de ses
                 usines</h3>
             <p>Les pictogrammes colorés sont des événements. UNS permet de tous les regrouper en temps quasi-réel, et
@@ -167,7 +185,7 @@
     </section>
 
 
-    <section id="contact-us" class="outer-section">
+    <section id="contact-us" class="outer-section" style="font-size: large; color: #414141;">
         <h2>Nous contacter</h2>
         <p>Ce site est public et Open Source, en mode "Creative Commons", disponible sur le lien Github :
 
