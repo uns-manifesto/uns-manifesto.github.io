@@ -7,6 +7,8 @@
     "nav_content": "Manifesto",
     "nav_contact": "Contact",
     "nav_about": "About",
+    "about_definition_title": "UNS Definition & Standards",
+    "about_definition_text": "A UNS Definition is a semantic agreement on how operations are described. While formal UNS Standards are essential for technical protocol compliance and deep interoperability, a Manifesto moves faster. It provides the immediate cultural and philosophical alignment needed for the community to act now, while formal standardization processes follow behind to solidify the technical foundation.",
     "hero_title": "The Unified Namespace Manifesto",
     "hero_subtitle": "#UNSManifesto",
     "hero_tagline": "A framework for scalable, open, and event-driven industry",

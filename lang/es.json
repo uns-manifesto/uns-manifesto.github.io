@@ -7,6 +7,8 @@
     "nav_content": "Manifiesto",
     "nav_contact": "Contacto",
     "nav_about": "Sobre el proyecto",
+    "about_definition_title": "Definición y Estándares UNS",
+    "about_definition_text": "Una Definición UNS es un acuerdo semántico sobre cómo se describen las operaciones. Si bien los Estándares UNS formalmente son esenciales para el cumplimiento de los protocolos técnicos y la interoperabilidad profunda, un Manifiesto se mueve más rápido. Proporciona la alineación cultural y filosófica inmediata necesaria para que la comunidad actúe ahora, mientras que los procesos de estandarización formal los siguen para consolidar la base técnica.",
     "hero_title": "El Manifiesto del Unified Namespace",
     "hero_subtitle": "#UNSManifesto",
     "hero_tagline": "Un marco para una industria escalable, abierta y orientada a eventos",
