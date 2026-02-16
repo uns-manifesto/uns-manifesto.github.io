@@ -7,7 +7,7 @@
 
 ## The Core Philosophy
 
-A Unified Namespace is a living, event-driven, structured data ecosystem that creates a (near) real-time, shared, contextualized understanding of operations.
+A Unified Namespace (UNS) is a living, event-driven, structured data ecosystem that creates a (near) real-time, shared, contextualized understanding of operations.
 
 It is a framework — not a tool.
 
@@ -29,12 +29,12 @@ The **Unified Namespace (UNS)** is not a product.
 It is not a broker.
 It is not a platform.
 
-It is a **design philosophy for industrial information systems** and spans across IT and OT, and the entire organization, and beyond (various providers, public institutions, B2B/B2C customers, etc.). To deliver Data as a valuable commodity.
+It is a **design philosophy for industrial information systems** which goes beyond the boundaries of IT and OT, as it spans across the entire extended organization (various providers, public institutions, B2B/B2C customers, etc.) to deliver Data as high value-added.
 
 Like agility, it is:
 
 * Difficult to explain in theory
-* Obvious once experienced
+* Obvious once experienced (Maria Montessori's #LearnByDoing principle)
 * Simple in principle
 * Powerful in practice
 * Easy to misunderstand
@@ -43,6 +43,7 @@ Like agility, it is:
 You do not “install” a Unified Namespace.
 You **design a Digital Strategy, and grow into it** over the years.
 
+---
 
 ## The Four Principles of Unified Namespace
 
@@ -63,7 +64,7 @@ No more fragile point-to-point dependencies.
 ### 2️⃣ Report by Exception (RBE)
 **Over massive, meaningless data floods**
 
-Only meaningful changes matter. 
+Only meaningful changes matter.
 Signal over noise.
 Context over volume.
 
@@ -112,41 +113,41 @@ It is the **architectural coherence** that connects systems and humans.
 
 When correctly implemented, a Unified Namespace creates:
 
-### 🌍 A Global Single Source of Truth (SSoT)
+### A Global Single Source of Truth (SSoT)
 A shared, real-time operational reality across IT & OT.
 * **Real-Time Definition**: It represents the *last known value* in near real-time.
 * **No Duplication**: It provides data *without duplication* and *without storing it* (no database in the UNS core; historians are separate).
 * **Automatic HMI**: New KPIs and screens appear automatically without coding new HMIs.
 
-### ⚡ Exponential Use Case Creation
+### Exponential Use Case Creation
 Once data is structured and contextualized, new use cases emerge rapidly — predictive maintenance, energy optimization, quality analytics, AI applications.
 
-### 🔄 Extreme Flexibility
+### Extreme Flexibility
 Systems evolve without re-engineering the entire architecture.
 
-### 💰 Faster ROI
+### Faster ROI
 Projects become incremental, not monolithic.
 Value is delivered continuously.
 
-### 🧩 Tool Agnosticism
+### Tool Agnosticism
 You choose tools based on need, budget, and constraints — not because your architecture forces you.
 
 ---
 
 #  Why Adoption Fails
 
-Like Agile, many will claim compliance.
+Like Agile, or AI, many will claim compliance and expertise.
 
 But:
 
-* Adding a broker does not create a Unified Namespace.
+* Adding a tool, a broker does not create a Unified Namespace.
 * Streaming all data does not make it event-driven.
 * Publishing chaos does not create structure.
 
 UNS is:
 * A mindset
 * A discipline
-* A long-term architectural commitment
+* A long-term architectural commitment, backed by tools respecting UNS principles.
 
 It requires governance.
 It requires naming conventions.
@@ -157,16 +158,7 @@ It takes years to master — because it is a framework.
 
 ---
 
-#  The Call to Action
-In a world dominated by proprietary ecosystems, the Unified Namespace represents:
-
-* Industrial resilience
-* Energy efficiency
-* Sustainable scalability
-
-This is not a technological trend.
-It is an architectural evolution.
-
+# Sign the Unified Namespace Manifesto
 We invite:
 
 * Industrial leaders
@@ -179,23 +171,6 @@ We invite:
 To align around shared principles.
 To avoid unnecessary complexity.
 To design systems that will still make sense in 20 years.
-
----
-
-# The Unified Namespace Declaration
-
-We believe:
-
-* Operational data should be event-driven.
-* Architectures should be loosely coupled.
-* Systems should report meaningful change, not noise.
-* Infrastructure must be scalable and lightweight.
-* Standards must be open and interoperable.
-* Architecture must outlive tools.
-
-A Unified Namespace is not about technology.
-
-It is about **clarity, structure, and long-term coherence**.
 
 ---
 
