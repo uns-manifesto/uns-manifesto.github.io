@@ -82,21 +82,6 @@ Open protocols enable resilience, innovation, and freedom of choice.
 * **Open Architecture**: Systems must "play nice" with other actors and share data using standard tools.
 * **Proven at Scale**: This is not for Proofs of Concept (PoC) that only work locally. It is proven to work at scale (1000+ sites worldwide in true production).
 
----
-
-# Common mistakes and what UNS is NOT
-
-* ❌ Not an MQTT broker alone
-* ❌ Not a technology stack
-* ❌ Not a data lake
-* ❌ Not a dashboard
-* ❌ Not an IIoT platform
-* ❌ Not a vendor solution
-* ❌ Not ...
-
-It is the **architectural coherence** that connects systems and humans.
-
-
 #  The Consequences of Doing It Right
 
 When correctly implemented, a Unified Namespace creates:
@@ -122,44 +107,8 @@ You choose tools based on need, budget, and constraints — not because your arc
 
 ---
 
-#  Why Adoption Fails
-
-Like Agile, or AI, many will claim compliance and expertise.
-
-But:
-
-* Adding a tool, a broker does not create a Unified Namespace.
-* Streaming all data does not make it event-driven.
-* Publishing chaos does not create structure.
-
-UNS is:
-* A mindset
-* A discipline
-* A long-term architectural commitment, backed by tools respecting UNS principles.
-
-It requires governance.
-It requires naming conventions.
-It requires semantic modeling.
-It requires cultural alignment between IT and OT.
-
-It takes years to master, because it is a framework.
-
 ---
 
-# Sign the Unified Namespace Manifesto
-We invite:
-
-* Industrial leaders
-* System integrators
-* Software vendors
-* Architects
-* Public institutions
-* Educators
-
-To align around shared principles.
-To avoid unnecessary complexity.
-To design systems that will still make sense in 20 years.
-
----
+*Version 2.0 | Open for community contribution and evolution*
 
 *Version 2.0 | Open for community contribution and evolution*

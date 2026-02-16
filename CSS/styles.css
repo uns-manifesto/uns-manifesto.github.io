@@ -96,8 +96,7 @@ a:hover {
 }
 
 .content-section {
-    padding: 80px 0;
-    min-height: 80vh;
+    padding: 60px 0;
 }
 
 .alternate-bg {
@@ -798,4 +797,116 @@ footer a {
 
 .back-to-top:hover svg {
     transform: translateY(-2px);
+}
+
+/* Invitation Section */
+.invitation-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #18619e 0%, #244c6e 100%);
+    color: var(--white);
+}
+
+.invitation-card {
+    background: var(--white);
+    padding: 60px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 950px;
+    margin: 0 auto;
+    color: var(--text-color);
+}
+
+.invitation-card h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.invitation-subtitle {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-light);
+    margin-bottom: 40px;
+}
+
+.invitation-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.invitation-grid ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.invitation-grid ul li {
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 30px;
+    font-size: 1.15rem;
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.invitation-grid ul li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.invitation-goals {
+    background: #f0f7ff;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    border: 1px dashed var(--primary-color);
+}
+
+.invitation-goals p {
+    margin-bottom: 12px;
+    font-weight: 600;
+    color: var(--primary-dark);
+    font-size: 1.1rem;
+}
+
+.invitation-goals p:last-child {
+    margin-bottom: 0;
+}
+
+.invitation-cta .btn-primary {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 20px 60px;
+    font-size: 1.3rem;
+    box-shadow: 0 10px 20px rgba(24, 97, 158, 0.3);
+    border: 2px solid var(--primary-color);
+}
+
+.invitation-cta .btn-primary:hover {
+    background: var(--primary-dark);
+    border-color: var(--primary-dark);
+    transform: scale(1.05);
+    color: var(--white);
+}
+
+@media (max-width: 600px) {
+    .invitation-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .invitation-card {
+        padding: 40px 20px;
+    }
+
+    .invitation-card h2 {
+        font-size: 2rem;
+    }
 }

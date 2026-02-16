@@ -81,21 +81,6 @@ Les protocoles ouverts permettent la résilience, l'innovation et la liberté de
 * **Architecture Ouverte** : Les systèmes doivent « bien jouer » avec les autres acteurs et partager les données en utilisant des outils standards.
 * **Éprouvé à l'Échelle** : Ce n'est pas pour des Preuves de Concept (PoC) qui ne fonctionnent que localement. Il est prouvé qu'il fonctionne à grande échelle (plus de 1000 sites dans le monde en véritable production).
 
----
-
-# Erreurs courantes et ce que l'UNS n'est PAS
-
-* ❌ Pas seulement un broker MQTT
-* ❌ Pas une pile technologique
-* ❌ Pas un lac de données
-* ❌ Pas un tableau de bord
-* ❌ Pas une plateforme IIoT
-* ❌ Pas une solution vendeur
-* ❌ Pas ...
-
-C'est la **cohérence architecturale** qui connecte les systèmes et les humains.
-
-
 # Les Conséquences de Bien Faire les Choses
 
 Lorsqu'il est correctement mis en œuvre, un Unified Namespace crée :
@@ -120,46 +105,4 @@ La valeur est délivrée en continu.
 Vous choisissez les outils en fonction des besoins, du budget et des contraintes — pas parce que votre architecture vous y oblige.
 
 ---
-
-# Pourquoi l'Adoption Échoue
-
-Comme pour l'Agile, ou l'IA beaucoup prétendront être conformes et experts.
-
-Mais :
-
-* Ajouter un outil, un broker ne crée pas un Unified Namespace.
-* Diffuser toutes les données ne rend pas le système piloté par les événements.
-* Publier le chaos ne crée pas de structure.
-
-L'UNS est :
-* Un état d'esprit
-* Une discipline
-* Un engagement architectural à long terme, adossé à des outils respectant les principes de l'UNS.
-
-Il nécessite une gouvernance.
-Il nécessite des conventions de nommage.
-Il nécessite une modélisation sémantique.
-Il nécessite un alignement culturel entre IT et OT.
-
-Il faut des années pour le maîtriser, car c'est un cadre.
-
----
-
-# Manifestez-vous pour signer le Manifeste du Unified Namespace
-Nous invitons :
-
-* Les leaders industriels
-* Les intégrateurs systèmes
-* Les éditeurs de logiciels
-* Les fabricants de matériel
-* Les architectes
-* Les institutions publiques
-* Les éducateurs
-
-À s'aligner autour de principes partagés.
-À éviter la complexité inutile.
-À concevoir des systèmes qui auront encore du sens dans 20 ans.
-
----
-
 *Version 2.0 | Ouvert à la contribution et à l'évolution de la communauté*

@@ -86,21 +86,6 @@ Los protocolos abiertos permiten resiliencia, innovación y libertad de elecció
 * **Arquitectura Abierta**: Los sistemas deben "jugar limpio" con otros actores y compartir datos utilizando herramientas estándar.
 * **Probado a Escala**: Esto no es para Pruebas de Concepto (PoC) que solo funcionan localmente. Está probado que funciona a escala (más de 1000 sitios en todo el mundo en producción real).
 
----
-
-# Errores comunes y lo que el UNS NO es
-
-* ❌ No es solo un broker MQTT
-* ❌ No es una pila tecnológica
-* ❌ No es un lago de datos
-* ❌ No es un tablero (dashboard)
-* ❌ No es una plataforma IIoT
-* ❌ No es una solución de un vendedor
-* ❌ No es ...
-
-Es la **coherencia arquitectónica** que conecta sistemas y humanos.
-
-
 # Las Consecuencias de Hacerlo Bien
 
 Cuando se implementa correctamente, un Unified Namespace crea:
@@ -125,45 +110,4 @@ El valor se entrega continuamente.
 Eliges herramientas basadas en necesidad, presupuesto y restricciones — no porque tu arquitectura te obligue.
 
 ---
-
-# Por qué Falla la Adopción
-
-Como Agile, o la IA, muchos afirmarán cumplimiento y experiencia.
-
-Pero:
-
-* Agregar una herramienta, un broker, no crea un Unified Namespace.
-* Transmitir todos los datos no lo hace impulsado por eventos.
-* Publicar caos no crea estructura.
-
-El UNS es:
-* Una mentalidad
-* Una disciplina
-* Un compromiso arquitectónico a largo plazo, respaldado por herramientas que respetan los principios del UNS.
-
-Requiere gobernanza.
-Requiere convenciones de nomenclatura.
-Requiere modelado semántico.
-Requiere alineación cultural entre IT y OT.
-
-Toma años dominarlo, porque es un marco de trabajo.
-
----
-
-# Firma el Manifiesto del Unified Namespace
-Invitamos a:
-
-* Líderes industriales
-* Integradores de sistemas
-* Vendedores de software
-* Arquitectos
-* Instituciones públicas
-* Educadores
-
-A alinearse en torno a principios compartidos.
-A evitar la complejidad innecesaria.
-A diseñar sistemas que seguirán teniendo sentido en 20 años.
-
----
-
 *Versión 2.0 | Abierto a la contribución y evolución de la comunidad*
