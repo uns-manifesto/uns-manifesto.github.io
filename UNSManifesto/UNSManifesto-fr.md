@@ -1,21 +1,3 @@
-# #UNSManifesto
-
-## Le Manifeste du Unified Namespace (Espace de Noms Unifiés)
-
-### Un cadre pour une industrie évolutive, ouverte et pilotée par les événements
-
----
-
-## La Philosophie Fondamentale
-
-Un Unified Namespace (UNS) est un écosystème de données vivant, structuré et piloté par les événements, qui crée une compréhension des opérations en temps (quasi) réel, partagée et contextualisée.
-
-C'est un cadre, pas un outil.
-
-Les outils peuvent le permettre. Mais les outils seuls ne le créeront jamais. C'est centré sur l'humain et cela nécessite une gouvernance.
-
----
-
 ## Pourquoi un Manifeste du Unified Namespace ?
 
 En 2001, le **Manifeste Agile** a remodelé le développement logiciel dans le monde entier.
@@ -31,15 +13,15 @@ Le **Unified Namespace (UNS)** n'est pas un produit.
 Ce n'est pas un broker.
 Ce n'est pas une plateforme.
 
-C'est une **philosophie de conception pour les systèmes d'information industriels** qui dépasse les limites de l'IT et l'OT, car s'étend à l'organisation toute entière étendue (divers fournisseurs, institutions publiques, clients B2B/B2C, etc.) pour délivrer la donnée comme haute valeur ajoutée.
+C'est **principe d'architecture / une philosophie de conception pour les systèmes d'information industriels** qui dépasse les limites de l'IT et l'OT, car s'étend à l'organisation toute entière étendue (divers fournisseurs, institutions publiques, clients B2B/B2C, etc.) pour délivrer la donnée comme haute valeur ajoutée.
 
 Comme l'agilité, il est :
-* Difficile à expliquer en théorie
+* Difficile d'en expliquer la théorie, tellement elle est vaste
 * Évident une fois expérimenté (principe du #LearnByDoing de Maria Montessori)
 * Simple dans son principe
 * Puissant dans la pratique
-* Facile de 
-* Difficile à maîtriser, nécessite plusieurs années d'expérience pratique sur le terrain (pas de théorie)
+* Facile de mal d'interpréter 
+* Difficile à maîtriser, et nécessite plusieurs années d'expérience pratique sur le terrain (pas de théorie)
 
 On n'« installe » pas un Unified Namespace.
 On **conçoit une Stratégie Digitale, et on grandit avec** au fil des années.
@@ -48,7 +30,7 @@ On **conçoit une Stratégie Digitale, et on grandit avec** au fil des années.
 
 <div id="Resx_Principles"></div>
 
-## Les Quatre Principes du Unified Namespace
+## Les quatre principes du Unified Namespace
 
 Inspirés par l'esprit de l'Agile, nous valorisons :
 

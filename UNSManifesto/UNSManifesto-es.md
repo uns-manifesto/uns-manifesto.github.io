@@ -1,21 +1,3 @@
-# #UNSManifesto
-
-## El Manifiesto del Unified Namespace
-
-### Un marco para una industria escalable, abierta e impulsada por eventos
-
----
-
-## La Filosofía Central
-
-Un Unified Namespace (UNS) es un ecosistema de datos vivo, estructurado e impulsado por eventos que crea una comprensión de las operaciones en tiempo (casi) real, compartida y contextualizada.
-
-Es un marco, no una herramienta.
-
-Las herramientas pueden habilitarlo. Pero las herramientas por sí solas nunca lo crearán. Está centrado en el ser humano y necesita gobernanza.
-
----
-
 ## ¿Por qué un Manifiesto del Unified Namespace?
 
 En 2001, el **Manifiesto Ágil** reformuló el desarrollo de software en todo el mundo.
@@ -31,16 +13,16 @@ El **Unified Namespace (UNS)** no es un producto.
 No es un broker.
 No es una plataforma.
 
-Es una **filosofía de diseño para sistemas de información industrial** que va más allá de los límites de IT y OT, ya que se extiende a toda la organización extendida (varios proveedores, instituciones públicas, clientes B2B/B2C, etc.) para entregar Datos como alto valor añadido.
+Es una **principe de arquitectura / filosofía de diseño para sistemas de información industrial** que va más allá de los límites de IT y OT, ya que se extiende a toda la organización extendida (varios proveedores, instituciones públicas, clientes B2B/B2C, etc.) para entregar Datos como alto valor añadido.
 
 Como la agilidad, es:
 
-* Difícil de explicar en teoría
+* Difícil de explicar en teoría, porque es vasto
 * Obvio una vez experimentado (principio #LearnByDoing de Maria Montessori)
 * Simple en principio
 * Poderoso en la práctica
 * Fácil de malinterpretar
-* Difícil de dominar, necesita muchos años de experiencia práctica en el campo (no teoría)
+* Difícil de dominar, y necesita muchos años de experiencia práctica en el campo (no teoría)
 
 No se “instala” un Unified Namespace.
 Se **diseña una Estrategia Digital, y se crece en ella** a lo largo de los años.
@@ -49,11 +31,11 @@ Se **diseña una Estrategia Digital, y se crece en ella** a lo largo de los año
 
 <div id="Resx_Principles"></div>
 
-## Los Cuatro Principios del Unified Namespace
+## Los cuatro principios del Unified Namespace
 
 Inspirados en el espíritu de Agile, valoramos:
 
-### 1️⃣ Arquitectura Impulsada por Eventos (Event-Driven)
+### 1️⃣ Arquitectura impulsada por eventos (Event-Driven)
 
 **Sobre integraciones fuertemente acopladas, frágiles y tipo espagueti**
 

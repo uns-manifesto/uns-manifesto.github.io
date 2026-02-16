@@ -1,7 +1,7 @@
 {
     "page_title": "Principios UNS - Unified Namespace",
     "nav_intro": "Introducción",
-    "nav_principles": "Los Cuatro Principios",
+    "nav_principles": "Los cuatro principios",
     "nav_content": "Manifiesto",
     "nav_contact": "Contacto",
     "nav_about": "Sobre el proyecto",
@@ -12,6 +12,7 @@
     "hero_desc": "Un Unified Namespace (UNS) es un ecosistema de datos estructurado, vivo y orientado a eventos que crea una comprensión compartida y contextualizada de las operaciones en tiempo (casi) real.",
     "hero_framework": "Es un marco, no una herramienta.",
     "hero_tools": "Las herramientas pueden habilitarlo. Pero las herramientas solas nunca lo lograrán. Está centrado en el ser humano y necesita gobernanza.",
+    "hero_disclaimer": "Este es un documento creado colectivamente. Si algo está mal, no dude en ajustarlo en el proyecto de GitHub.",
     "contact_title": "Contáctenos",
     "contact_subtitle": "Este sitio es público y de código abierto.",
     "contact_btn": "Ver en GitHub",
