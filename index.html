@@ -1,8 +1,20 @@
-<html>
+<!DOCTYPE html>
+<html lang="fr">
 
 <head>
-    <title >Principes de l'UNS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principes de l'UNS - Unified Namespace</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Slab:wght@400;700&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
             w[l] = w[l] || []; w[l].push({
@@ -14,237 +26,186 @@
         })(window, document, 'script', 'dataLayer', 'GTM-KZCLXL57');</script>
     <!-- End Google Tag Manager -->
 
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="script/script.js"></script>
     <script>
         function scrollToSection(sectionId) {
             var section = document.getElementById(sectionId);
             if (section) {
-                var offset = 50; // Adjust this value based on your needs
-                var sectionPosition = section.offsetTop - offset;
-                window.scrollTo({ top: sectionPosition, behavior: 'smooth' });
-            }
-        }
-        function scrollToSection2(sectionId) {
-            var section = document.getElementById(sectionId);
-            if (section) {
-                var offset = 140; // Adjust this value based on your needs
+                var offset = 80; // Adjusted for sticky header
                 var sectionPosition = section.offsetTop - offset;
                 window.scrollTo({ top: sectionPosition, behavior: 'smooth' });
             }
         }
     </script>
-
 </head>
 
 <body>
-    <!-- Google Tag Manager (noscript) --> 
+    <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZCLXL57" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <header style="background-color: white; padding: 20px; display: flex; align-items: center; position: fixed; top: 0; width: 100%; z-index: 101;">
-        <h1 style="color:#18619e; flex: 1; font-size: xx-large;">Principes du Unified Namespace #UNS </h1>
-        <a href="#Resx_Home" style="margin-top: 1em; margin-right: 1.5em;">
-            <img src="images/logo.png" alt="Logo" height="50em" style="margin-left: auto; margin-right: 2em;">
-        </a>
+    <header id="main-header">
+        <div class="header-container">
+            <a href="#Resx_Home" class="logo-link">
+                <img src="images/logo.png" alt="FactoVia Logo" class="logo">
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="javascript:void(0);" onclick="scrollToSection('Resx_Home')">Introduction</a></li>
+                    <li><a href="javascript:void(0);" onclick="scrollToSection('Resx_Definition')">Définition</a></li>
+                    <li><a href="javascript:void(0);" onclick="scrollToSection('Resx_Why')">Pourquoi l'UNS ?</a></li>
+                    <li><a href="javascript:void(0);" onclick="scrollToSection('Resx_Principles')">Fonctionnement</a>
+                    </li>
+                    <li><a href="javascript:void(0);" onclick="scrollToSection('contact-us')">Contact</a></li>
+                    <li><a href="sources.html" class="nav-btn">Sources</a></li>
+                </ul>
+                <button class="mobile-menu-btn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
     </header>
-    <br />
 
-    <!-- <button class="button" onclick="swapText()">English / Français</button>      
-    <button class="button" onclick="openBlankPageWithSignatories()">List of Signatories</button>  
-    <font size="+2"><a href="https://forms.gle/ZYyshTAYa29ZqJA29" target="_blank"><u>Sign!</u></a></font>   -->
-
-    <div style="text-align: center;">
-        <nav>
-            <ul class="nav-menu" style="font-size: large;">
-                <li><a href="javascript:void(0);" onclick="scrollToSection('Resx_Home')">Introduction</a></li>
-                <li>
-                    <a href="javascript:void(0);" onclick="scrollToSection('Resx_Definition')">Définition de UNS</a>
-                </li>
-                <li>
-                    <a href="javascript:void(0);" onclick="scrollToSection2('Resx_Why')">Pourquoi l'UNS ?</a>
-                </li>
-                <li><a href="javascript:void(0);" onclick="scrollToSection2('Resx_Principles')">Fonctionnement </a></li>
-                <li><a href="javascript:void(0);" onclick="scrollToSection('contact-us')">Nous contacter</a></li>
-                <li><a href="sources.html" target="_self">Sources</a></li>
-                <!-- <li><a href="#switchFrEn"><a href="#">
-                            <img id="langBtn" src="images/flag_fr.png" alt="Switch to French" width="30px"></a>
-                </li> -->
-            </ul>
-        </nav>
-
-    </div>
-
-    <section class="outer-section" id="Resx_Home">
-        <div class="flex-container" style="margin-top:7em;">
-            <div style="font-size: large; color: #414141;">
-                <h2 >Introduction</h2>
-                <p id="Resx_Home_Text" >
-                    L'architecture Unified Namespace (UNS) s'est imposée comme l'architecture socle pour construire sa
-                    transformation Digitale.
-                    <br>Ce qui est frustrant c'est que si on ne connait pas UNS, alors l'expert va se raccrocher à des
-                    principes qu'il connait et avec lesquels il est à l'aise, et va penser connaitre. Mais il sera
-                    biaisé, et peut ne pas saisir l'intérêt du sujet.
-                    <br />Le 31 juillet 2023, dans un rapport détaillé de 24 pages, Gartner a officiellement reconnue
-                    l'UNS comme étant une architecture de référence.
-                    Cela permet une collaboration moderne l'informatique industrielle (OT) et l'informatique bureautique
-                    (IT) ensemble. (cf onglet 'Sources').
-                    <br />
-            </div>
-        </div>
-    </section>
-
-    <section class="outer-section"  style="margin-top:3em;">
-        <div class="flex-container" >
-            <div style="font-size: large; color: #414141;" id="Resx_Definition">
-                <a>Ce site donne des outils pour comprendre l'UNS, en reprennant notamment la définition de <a
-                        href="sources.html" target="_self">Walker Reynolds</a> l'inventeur de l'UNS (cf onglet
-                    'Sources') :
-                </a>
-                <br />
-                <br />
-                "Il est essentiel de comprendre trois questions fondamentales pour revendiquer véritablement une
-                maîtrise de cette architecture liée à la transformation digitale 4.0. Cela est le socle de base de la maturité digitale de
-                plusieurs indusrtriels qui sont les plus avancées sur le sujet."
-
-
-                <h2 >1. Définition de Unified Namespace (UNS) ?</h2>
-
-                <ul>
-                    <li>Il s'agit du schéma directeur qui va structurer de votre entreprise, englobant tous les types
-                        d'événements de votre société.</li>
-                    <li>Il constitue la source unique de vérité (Single Source of Truth, SSoT) pour toutes les données
-                        et informations au sein de votre organisation.</li>
-                    <li>Il représente le battement en temps réel de l'état actuel de votre entreprise.</li>
-                    <li>Il fait office de "hub" de communication pour tous les éléments "intelligents" de votre
-                        entreprise.</li>
-                    <li>Il forme le socle architectural de votre stratégie d'Industrie 4.0 et de transformation
-                        numérique.</li>
-                </ul>
-
-            </div>
-        </div>
-        </div>
-
-
-    </section>
-
-    <section class="outer-section" id="Resx_Why" style="margin-top:3em;">
-        
-                <div class="flex-container" >
-                    <div style="font-size: large; color: #414141;">
-                        <h2>2. Pourquoi l'UNS et à quels besoins est-ce que cela répond ? </h2>
-                        <ul>
-                            <li>Pour une évolutivité d'entreprise qui s'adapte et se développe avec votre activité.</li>
-                            <li>Pour atteindre une normalisation des données, garantissant la cohérence et l'exactitude.
-                            </li>
-                            <li>Il offre une valeur ajoutée rapide, accélérant la transformation numérique.</li>
-                            <li>Améliore la sécurité de votre environnement numérique.</li>
-                            <li>Favorise l'agilité numérique, permettant une réponse rapide aux changements.</li>
-                        </ul>
-                    </div>
+    <main>
+        <section id="Resx_Home" class="hero-section">
+            <div class="content-wrapper">
+                <h1 class="hero-title">Unified Namespace (UNS)</h1>
+                <p class="hero-subtitle">L'architecture socle pour votre transformation digitale 4.0</p>
+                <div class="hero-content">
+                    <p>L'architecture Unified Namespace (UNS) s'est imposée comme l'architecture socle pour construire
+                        sa transformation Digitale.</p>
+                    <p>Le 31 juillet 2023, Gartner a officiellement reconnu l'UNS comme architecture de référence,
+                        permettant une collaboration moderne entre l'informatique industrielle (OT) et l'informatique
+                        bureautique (IT).</p>
                 </div>
-            
-    </section>
-
-    <section class="outer-section" id="Resx_Principles" style="margin-top:3em;">
-        <div class="flex-container">
-            <div style="font-size: large; color: #414141;">
-                <h2>3. Fonctionnement</h2>
-                <ul>
-                    <li>Les objets intelligents basés sur des protocoles de communications "classiques" s'intègrent
-                        facilement tant qu'ils respectent les protocoles classiques de l' IIoT (Industrial Internet of
-                        Things = Internet des objets connectés industriels). Ils doivent cependant respecter des
-                        exigences techniques minimales (minimum technical requirements).</li>
-                    <li>Les objets "non-intelligents" ou ne respectant pas les exigences techniques minimales, sont
-                        intégrés via des passerelles (gateways) qui traduisent leurs protocoles vers les normes
-                        industrielles retenues par votre société.</li>
-                    <li>Les ibjets intelligents publient des mises à jour, en temps (quasi) réel, vers des emplacements
-                        prédéfinis au sein du bon "namespace" (espace de noms).</li>
-                    <li>Les données et les informations au sein de du UNS est un mirroir toujours à jour de la structure
-                        organisationnelle de votre entreprise à un instant T.</li>
-                </ul>
             </div>
-        </div>
-
-        <section style="font-size: large; color: #414141;" style="margin-top:3em;">
-            <h3>Prennons le cas de 2 usines d'un même groupe qui doit suivre en temps réel tous les événements de ses
-                usines</h3>
-            <p>Les pictogrammes colorés sont des événements. UNS permet de tous les regrouper en temps quasi-réel, et
-                mettre à disposition tout ou partie de cela.
-                Dans cette illustration, admettons que le service Marketing n'a besoin que d'une vue partielle
-                d'informations. Alors il n'accède qu'à la partie "partial view 1".</p>
-            <img id="langBtn" src="images/UNS-factories.png" width="100%">
         </section>
 
-    </section>
+        <section id="Resx_Definition" class="content-section">
+            <div class="content-wrapper">
+                <h2>Définition de l'UNS</h2>
+                <div class="definition-block">
+                    <blockquote>
+                        "Il est essentiel de comprendre trois questions fondamentales pour revendiquer véritablement une
+                        maîtrise de cette architecture liée à la transformation digitale 4.0."
+                        <cite>- Walker Reynolds</cite>
+                    </blockquote>
+                </div>
 
+                <div class="cards-grid">
+                    <div class="feature-card">
+                        <h3>Schéma Directeur</h3>
+                        <p>Structure votre entreprise en englobant tous les types d'événements.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Source Unique de Vérité</h3>
+                        <p>Single Source of Truth (SSoT) pour toutes les données et informations.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Temps Réel</h3>
+                        <p>Représente le battement en temps réel de l'état actuel de votre entreprise.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Hub de Communication</h3>
+                        <p>Connecte tous les éléments "intelligents" de votre entreprise.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="contact-us" class="outer-section" style="font-size: large; color: #414141;">
-        <h2>Nous contacter</h2>
-        <p>Ce site est public et Open Source, en mode "Creative Commons", disponible sur le lien Github :
+        <section id="Resx_Why" class="content-section alternate-bg">
+            <div class="content-wrapper">
+                <h2>Pourquoi l'UNS ?</h2>
+                <ul class="benefits-list">
+                    <li>
+                        <span class="icon">📈</span>
+                        <div class="text"><strong>Évolutivité</strong> : S'adapte et se développe avec votre activité.
+                        </div>
+                    </li>
+                    <li>
+                        <span class="icon">🎯</span>
+                        <div class="text"><strong>Normalisation</strong> : Garantit la cohérence et l'exactitude des
+                            données.</div>
+                    </li>
+                    <li>
+                        <span class="icon">🚀</span>
+                        <div class="text"><strong>Valeur Ajoutée</strong> : Accélère la transformation numérique.</div>
+                    </li>
+                    <li>
+                        <span class="icon">🔒</span>
+                        <div class="text"><strong>Sécurité</strong> : Améliore la sécurité de votre environnement
+                            numérique.</div>
+                    </li>
+                    <li>
+                        <span class="icon">⚡</span>
+                        <div class="text"><strong>Agilité</strong> : Permet une réponse rapide aux changements.</div>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-            <a href="https://github.com/uns-manifesto/uns-manifesto.github.io/" target="_blank">
-                https://github.com/uns-manifesto/uns-manifesto.github.io/</a>
-        </p>
-    </section>
+        <section id="Resx_Principles" class="content-section">
+            <div class="content-wrapper">
+                <h2>Fonctionnement</h2>
+                <div class="principles-grid">
+                    <div class="principle-item">
+                        <h3>Intégration IIoT</h3>
+                        <p>Les objets intelligents s'intègrent facilement via les protocoles standards (MQTT, Sparkplug
+                            B, etc.).</p>
+                    </div>
+                    <div class="principle-item">
+                        <h3>Gateways</h3>
+                        <p>Les équipements legacy sont intégrés via des passerelles de traduction de protocoles.</p>
+                    </div>
+                    <div class="principle-item">
+                        <h3>Publication</h3>
+                        <p>Les objets publient des mises à jour en temps réel vers des "topics" structurés.</p>
+                    </div>
+                </div>
+
+                <div class="case-study">
+                    <h3>Cas d'usage : Vue Multi-Sites</h3>
+                    <p>Exemple de consolidation temps réel de plusieurs usines pour différents consommateurs (Marketing,
+                        Prod, Maintenance).</p>
+                    <img src="images/UNS-factories.png" alt="Schéma UNS Factories" class="responsive-img shadow-img">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-us" class="contact-section">
+            <div class="content-wrapper">
+                <h2>Nous contacter</h2>
+                <p>Ce site est public et Open Source.</p>
+                <a href="https://github.com/uns-manifesto/uns-manifesto.github.io/" target="_blank" class="btn-primary">
+                    Voir sur GitHub
+                </a>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>
-        <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
-            <span property="dct:title">UNS translation</span> by
-            <a rel="cc:attributionURL dct:creator" property="cc:attributionName"
-                href="https://www.linkedin.com/in/thavo/">Vincent Thavonekham</a>
-            is marked with <a href="http://creativecommons.org/publicdomain/zero/1.0?ref=chooser-v1" target="_blank"
-                rel="license noopener noreferrer" style="display:inline-block;">CC0 1.0<img
-                    style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
-                    src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img
-                    style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
-                    src="https://mirrors.creativecommons.org/presskit/icons/zero.svg?ref=chooser-v1"></a>
-        </p>.</p>
+        <div class="footer-content">
+            <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+                <span property="dct:title">UNS translation</span> by
+                <a rel="cc:attributionURL dct:creator" property="cc:attributionName"
+                    href="https://www.linkedin.com/in/thavo/">Vincent Thavonekham</a>
+            </p>
+            <p>
+                #UNSManifesto is Open Sourced with the free license <a
+                    href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank"
+                    rel="license noopener noreferrer">CC BY-NC-SA 4.0</a> © 2023-2026, v2.0
+            </p>
+        </div>
     </footer>
 
-    <!--     
-    <p> <a id="greeting" class="green-text">English_</a>      
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
-        Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
-        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
-        Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.
-        Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.
-    </p>   -->
-
-    <!-- Table data will go here -->
-    <!-- <iframe id="myIframe" style="width:80%; height:50%;"></iframe>   -->
-
     <script>
-
-        const myURL = "https://docs.google.com/spreadsheets/";
-        const optionNewHTMLPage = "/pubhtml?gid=380079388&amp;single=true&amp;widget=true&amp;headers=false";
-        const optionCSV = "/pub?gid=380079388&single=true&output=csv";
-
-
-        // document.getElementById('myIframe').src = myURL + optionCSV ;  
-        document.getElementById('myIframe').src = myURL + optionNewHTMLPage;
-
-        function openBlankPageWithSignatories() {
-            // window.open(myURL + optionCSV, '_blank');  
-            window.open(myURL + optionNewHTMLPage, '_blank');
-        }
-
-        function swapText() {
-            var greeting = document.getElementById("greeting");
-            if (greeting.innerHTML === "English_") {
-                greeting.innerHTML = "Français_";
-                greeting.className = "orange-text";
-            } else {
-                greeting.innerHTML = "English_";
-                greeting.className = "green-text";
-            }
-        }
-
+        // Simple mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function () {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
     </script>
 </body>
 
