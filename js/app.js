@@ -12,9 +12,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // Set dropdown value
     if (langSelect) {
         langSelect.value = currentLang;
+        langSelect.setAttribute('data-lang', currentLang); // For flag CSS
         langSelect.addEventListener('change', (e) => {
             currentLang = e.target.value;
             localStorage.setItem('uns_lang', currentLang);
+            langSelect.setAttribute('data-lang', currentLang); // Update flag
             loadLanguage(currentLang);
         });
     }
