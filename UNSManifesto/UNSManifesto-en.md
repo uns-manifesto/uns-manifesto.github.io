@@ -106,9 +106,4 @@ Value is delivered continuously.
 You choose tools based on need, budget, and constraints — not because your architecture forces you.
 
 ---
-
----
-
-*Version 2.0 | Open for community contribution and evolution*
-
 *Version 2.0 | Open for community contribution and evolution*
