@@ -570,3 +570,48 @@ footer a {
 .text-link:hover {
     color: var(--primary-dark);
 }
+
+/* Source specific image constraint */
+.source-img {
+    max-height: 400px;
+    width: auto;
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.nav-btn-highlight {
+    background-color: var(--accent-color);
+    color: var(--white) !important;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: 700;
+    transition: var(--transition);
+    box-shadow: var(--shadow-sm);
+}
+
+.nav-btn-highlight:hover {
+    background-color: #c92a35;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.nav-btn-highlight::after {
+    display: none;
+}
+
+/* Airtable Embed Responsive */
+.airtable-embed {
+    width: 100%;
+    min-height: 533px;
+    border: none;
+    background: transparent;
+}
+
+@media (min-width: 768px) {
+    .airtable-embed {
+        height: 600px;
+        /* Taller on desktop */
+    }
+}
