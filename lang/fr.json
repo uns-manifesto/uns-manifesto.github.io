@@ -1,5 +1,7 @@
 {
     "page_title": "Principes de l'UNS - Unified Namespace",
+    "seo_description": "Le Manifeste du Unified Namespace (UNS) : Un cadre pour une architecture industrielle évolutive, ouverte et basée sur des événements. Rejoignez le mouvement pour l'interopérabilité des données de l'Industrie 4.0.",
+    "seo_keywords": "Unified Namespace, UNS, Industrie 4.0, IIoT, MQTT, Architecture Orientée Événements, Manufacture Intelligente, Données Industrielles, Manifeste",
     "nav_intro": "Introduction",
     "nav_principles": "Les Quatre Principes",
     "nav_content": "Manifeste",

@@ -101,6 +101,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
         });
+
+        // Translate meta tags with data-i18n-content
+        document.querySelectorAll('[data-i18n-content]').forEach(el => {
+            const key = el.getAttribute('data-i18n-content');
+            if (data[key]) {
+                el.setAttribute('content', data[key]);
+            }
+        });
     }
 
     // --- Back to Top & Scroll Handling ---

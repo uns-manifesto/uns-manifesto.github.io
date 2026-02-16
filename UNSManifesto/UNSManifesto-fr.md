@@ -27,8 +27,12 @@ On n'« installe » pas un Unified Namespace.
 On **conçoit une Stratégie Digitale, et on grandit avec** au fil des années.
 
 ---
-
 <div id="Resx_Principles"></div>
+### Définition & Standards UNS
+
+Une **Définition UNS** est un accord sémantique sur la manière dont les opérations sont décrites. Alors que les **Standards UNS** formels sont essentiels pour la conformité technique des protocoles et l'interopérabilité profonde, un **Manifeste** progresse plus rapidement. Il fournit l'alignement culturel et philosophique immédiat nécessaire pour que la communauté agisse dès maintenant, tandis que les processus de normalisation formels suivent derrière pour solidifier les bases techniques.
+
+---
 
 ## Les quatre principes du Unified Namespace
 
