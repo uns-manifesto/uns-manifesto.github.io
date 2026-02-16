@@ -95,8 +95,6 @@ Les protocoles ouverts permettent la résilience, l'innovation et la liberté de
 
 ---
 
-![Représentation UNS](/images/UNSRepresentation.png)
-
 # Erreurs courantes et ce que l'UNS n'est PAS
 
 * ❌ Pas seulement un broker MQTT
@@ -155,7 +153,7 @@ Il nécessite des conventions de nommage.
 Il nécessite une modélisation sémantique.
 Il nécessite un alignement culturel entre IT et OT.
 
-Il faut des années pour le maîtriser — car c'est un cadre.
+Il faut des années pour le maîtriser, car c'est un cadre.
 
 ---
 

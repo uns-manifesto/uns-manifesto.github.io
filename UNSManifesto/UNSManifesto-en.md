@@ -94,8 +94,6 @@ Open protocols enable resilience, innovation, and freedom of choice.
 
 ---
 
-![UNS Representation](/images/UNSRepresentation.png)
-
 # Common mistakes and what UNS is NOT
 
 * ❌ Not an MQTT broker alone
@@ -154,7 +152,7 @@ It requires naming conventions.
 It requires semantic modeling.
 It requires cultural alignment between IT and OT.
 
-It takes years to master — because it is a framework.
+It takes years to master, because it is a framework.
 
 ---
 

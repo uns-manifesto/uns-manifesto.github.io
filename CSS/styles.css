@@ -192,7 +192,36 @@ nav {
     background-blend-mode: overlay;
     background-size: cover;
     background-position: center;
-    text-align: center;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.hero-text {
+    text-align: left;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uns-diagram {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: var(--shadow-lg);
+    transition: transform 0.3s ease;
+}
+
+.uns-diagram:hover {
+    transform: scale(1.02);
 }
 
 .hero-title {
@@ -209,11 +238,9 @@ nav {
 }
 
 .hero-content {
-    max-width: 800px;
-    margin: 0 auto;
     background: rgba(255, 255, 255, 0.7);
-    padding: 40px;
-    border-radius: 20px;
+    padding: 30px;
+    border-radius: 15px;
     box-shadow: var(--shadow-md);
 }
 
@@ -405,6 +432,24 @@ footer a {
         right: 0;
     }
 
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .hero-image {
+        order: -1;
+        /* Move image above text on mobile */
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .uns-diagram {
+        max-width: 100%;
+    }
+
     .hero-title {
         font-size: 2.5rem;
     }
@@ -581,6 +626,11 @@ footer a {
 .nav-btn:hover::after {
     display: none;
     /* Remove underline effect on hover for buttons */
+}
+
+.feature-card p:has(.text-link) {
+    text-align: center;
+    margin-top: 15px;
 }
 
 .text-link {
