@@ -60,61 +60,117 @@
     <main>
         <section class="content-section">
             <div class="content-wrapper">
-                <h2 data-i18n="sources_title">Information Sources / Publications</h2>
+                <!-- Tab Navigation -->
+                <div class="tab-navigation">
+                    <button class="tab-btn active" data-tab="sources" data-i18n="sources_title">Information Sources /
+                        Publications</button>
+                    <button class="tab-btn" data-tab="gdpr" data-i18n="gdpr_tab_title">GDPR & Data Rights</button>
+                </div>
 
-                <div class="cards-grid">
-                    <!-- Source 1 -->
-                    <article class="feature-card">
-                        <h3 data-i18n="source_linkedin_1">Source: Unified Namespace (UNS) Definition</h3>
-                        <p>November 14, 2023</p>
-                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7129861692829679616"
-                            target="_blank">
-                            <img src="images/UNS-PostOrigine.png" alt="UNS Definition Post"
-                                class="responsive-img shadow-img source-img">
-                        </a>
-                        <p>
+                <!-- Tab Content: Sources -->
+                <div id="sources-tab" class="tab-content active">
+                    <div class="cards-grid">
+                        <!-- Source 1 -->
+                        <article class="feature-card">
+                            <h3 data-i18n="source_linkedin_1">Source: Unified Namespace (UNS) Definition</h3>
+                            <p>November 14, 2023</p>
                             <a href="https://www.linkedin.com/feed/update/urn:li:activity:7129861692829679616"
-                                target="_blank" class="text-link" data-i18n="see_on_linkedin">
-                                View on LinkedIn
+                                target="_blank">
+                                <img src="images/UNS-PostOrigine.png" alt="UNS Definition Post"
+                                    class="responsive-img shadow-img source-img">
                             </a>
-                        </p>
-                    </article>
+                            <p>
+                                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7129861692829679616"
+                                    target="_blank" class="text-link" data-i18n="see_on_linkedin">
+                                    View on LinkedIn
+                                </a>
+                            </p>
+                        </article>
 
-                    <!-- Source 2 -->
-                    <article class="feature-card">
-                        <h3 data-i18n="source_gartner">Source: GARTNER</h3>
-                        <p data-i18n="date_gartner">July 31, 2023</p>
-                        <a href="https://www.linkedin.com/posts/walkerdreynolds_iiot-digitaltransformation-uns-activity-7104820618151264257-slph"
-                            target="_blank">
-                            <img src="images/GARTNER-2023-07-31.jpg" alt="Gartner Report"
-                                class="responsive-img shadow-img source-img">
-                        </a>
-                        <p>
+                        <!-- Source 2 -->
+                        <article class="feature-card">
+                            <h3 data-i18n="source_gartner">Source: GARTNER</h3>
+                            <p data-i18n="date_gartner">July 31, 2023</p>
                             <a href="https://www.linkedin.com/posts/walkerdreynolds_iiot-digitaltransformation-uns-activity-7104820618151264257-slph"
-                                target="_blank" class="text-link" data-i18n="see_on_linkedin">
-                                View on LinkedIn
+                                target="_blank">
+                                <img src="images/GARTNER-2023-07-31.jpg" alt="Gartner Report"
+                                    class="responsive-img shadow-img source-img">
                             </a>
-                        </p>
-                    </article>
+                            <p>
+                                <a href="https://www.linkedin.com/posts/walkerdreynolds_iiot-digitaltransformation-uns-activity-7104820618151264257-slph"
+                                    target="_blank" class="text-link" data-i18n="see_on_linkedin">
+                                    View on LinkedIn
+                                </a>
+                            </p>
+                        </article>
 
-                    <!-- Source 3 -->
-                    <article class="feature-card">
-                        <h3 data-i18n="source_gartner">Source: Top 10 industrial automation trends as seen at SPS 2025
-                        </h3>
-                        <p data-i18n="date_gartner">January 28, 2026</p>
-                        <a href="https://iot-analytics.com/top-10-industrial-automation-trends/" target="_blank">
-                            <img src="images/Top-10-industrial-automation-trends-as-seen-at-SPS-2025-vw.png"
-                                alt="Gartner Report" class="responsive-img shadow-img source-img">
-                        </a>
-                        <p>
-                            <a href="https://iot-analytics.com/top-10-industrial-automation-trends/" target="_blank"
-                                class="text-link" data-i18n="see_on_linkedin">
-                                View
+                        <!-- Source 3 -->
+                        <article class="feature-card">
+                            <h3 data-i18n="source_gartner">Source: Top 10 industrial automation trends as seen at SPS
+                                2025
+                            </h3>
+                            <p data-i18n="date_gartner">January 28, 2026</p>
+                            <a href="https://iot-analytics.com/top-10-industrial-automation-trends/" target="_blank">
+                                <img src="images/Top-10-industrial-automation-trends-as-seen-at-SPS-2025-vw.png"
+                                    alt="Gartner Report" class="responsive-img shadow-img source-img">
                             </a>
+                            <p>
+                                <a href="https://iot-analytics.com/top-10-industrial-automation-trends/" target="_blank"
+                                    class="text-link" data-i18n="see_on_linkedin">
+                                    View
+                                </a>
+                            </p>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Tab Content: GDPR -->
+                <div id="gdpr-tab" class="tab-content">
+                    <div class="hero-content" style="max-width: 900px; margin: 40px auto; text-align: left;">
+                        <h2 data-i18n="gdpr_intro_title">Your Data is Safe With Us</h2>
+                        <p data-i18n="gdpr_intro">Under GDPR (General Data Protection Regulation) guidelines, we assure
+                            you that your information will not be sold. Your data is displayed on our Open Source
+                            project for transparency and community building purposes only.</p>
+
+                        <h2 data-i18n="gdpr_rights_title">Your Rights</h2>
+                        <p data-i18n="gdpr_rights_intro">You have full control over your personal data. You can:</p>
+                        <ul>
+                            <li data-i18n="gdpr_right_access"><strong>Access</strong> your data at any time</li>
+                            <li data-i18n="gdpr_right_modify"><strong>Modify</strong> your information if it's incorrect
+                            </li>
+                            <li data-i18n="gdpr_right_delete"><strong>Delete</strong> your data permanently</li>
+                            <li data-i18n="gdpr_right_export"><strong>Export</strong> your data in a portable format
+                            </li>
+                        </ul>
+
+                        <h2 data-i18n="gdpr_data_title">What Data We Collect</h2>
+                        <p data-i18n="gdpr_data_optional">When you sign the manifesto, we collect the following
+                            <strong>optional</strong> information:
                         </p>
-                    </article>
+                        <ul>
+                            <li data-i18n="gdpr_data_name">First, Last Name or pseudonym </li>
+                            <li data-i18n="gdpr_data_company">Company Name</li>
+                            <li data-i18n="gdpr_data_message">Optional message to the community</li>
+                            <li data-i18n="gdpr_data_country">Country or Continent</li>
+                        </ul>
 
+                        <h2 data-i18n="gdpr_purpose_title">Purpose of Data Collection</h2>
+                        <p data-i18n="gdpr_purpose">Your optional responses help the community understand which
+                            countries and companies are leading the way in adopting the Unified Namespace architecture
+                            for Industry 4.0.</p>
 
+                        <h2 data-i18n="gdpr_contact_title">Exercise Your Rights</h2>
+                        <p data-i18n="gdpr_contact_text">To access, modify, or delete your information, please contact
+                            us:</p>
+                        <ul>
+                            <li data-i18n="gdpr_contact_linkedin"><strong>LinkedIn:</strong> <a
+                                    href="https://www.linkedin.com/in/thavo/" target="_blank">Vincent Thavonekham</a>
+                            </li>
+                        </ul>
+
+                        <p data-i18n="gdpr_response_time" style="margin-top: 30px; font-style: italic;">We will respond
+                            to your request within 30 days as required by GDPR regulations.</p>
+                    </div>
                 </div>
 
             </div>
@@ -128,8 +184,32 @@
                     href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank"
                     rel="license noopener noreferrer">CC BY-NC-SA 4.0</a> © 2023-2026, v2.0
             </p>
+            <p style="font-size: 0.85rem; color: #999; margin-top: 10px;">
+                Original idea from Vincent Thavonekham, 2023.
+            </p>
         </div>
     </footer>
+
+    <script>
+        // Tab switching functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const tabButtons = document.querySelectorAll('.tab-btn');
+
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const targetTab = this.getAttribute('data-tab');
+
+                    // Remove active class from all buttons and content
+                    document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+                    document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+
+                    // Add active class to clicked button and corresponding content
+                    this.classList.add('active');
+                    document.getElementById(targetTab + '-tab').classList.add('active');
+                });
+            });
+        });
+    </script>
 
 </body>
 
