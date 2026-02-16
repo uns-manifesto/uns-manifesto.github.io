@@ -1,4 +1,4 @@
-## The Five Principles of Unified Namespace
+## The Unified Namespace manifesto in 5 points
 
 Inspired by the spirit of Agile, we value:
 
@@ -9,8 +9,8 @@ Systems publish facts as they happen.
 Consumers subscribe to what they need.
 No more fragile point-to-point dependencies.
 
-* **Edge Driven**: All devices and systems use events tracked and processed locally and globally, as per today the most widely used and proven approach is to use an MQTT 5.0 broker.
-* **Resilience (Disconnected Mode)**: In disconnected mode (offline), the system must still work. When back online, it auto-resynchronizes by sending missing data (Store & Forward).
+* **Edge Driven** All devices and systems use events tracked and processed locally and globally, as per today the most widely used and proven approach is to use an MQTT 5.0 broker.
+* **Resilience (Disconnected Mode)** In disconnected mode (offline), the system must still work. When back online, it auto-resynchronizes by sending missing data (Store & Forward).
 
 ---
 
@@ -21,7 +21,7 @@ Only meaningful changes matter.
 Signal over noise.
 Context over volume.
 
-* **Anti-Polling**: Traditional architectures return all data periodically, even "Null" or "empty" data. This jams the network at scale and creates junk in data lakes. UNS eliminates this waste.
+* **Anti-Polling** Traditional architectures return all data periodically, even "Null" or "empty" data. This jams the network at scale and creates junk in data lakes. UNS eliminates this waste.
 
 ---
 
@@ -31,27 +31,27 @@ Context over volume.
 Architecture must evolve with the business.
 If it cannot scale horizontally and adapt quickly, it will collapse under complexity.
 
-* **Lightweight Pub/Sub**: MQTT is not compulsory but is nearly a "Must Have" above Level 2. (OPC UA is the standard for L1/L2).
-* **No REST API for Core**: REST APIs are used to talk *to* the UNS, but are not the center piece. The core is event-based.
+* **Lightweight Pub/Sub** MQTT is not compulsory but is nearly a "Must Have" above Level 2. (OPC UA is the standard for L1/L2).
+* **No REST API for Core** REST APIs are used to talk *to* the UNS if the system is not MQTT compatible.
 
 ---
 
-### 4. Open & Interoperable Standards
+### 4. Open & interoperable standards
 **Over closed, proprietary lock-in**
 
 Interoperability is sovereignty.
 Open protocols enable resilience, innovation, and freedom of choice.
 
-* **Open Architecture**: Systems must "play nice" with other actors and share data using standard tools.
-* **Proven at Scale**: This is not for Proofs of Concept (PoC) that only work locally. It is proven to work at scale (1000+ sites worldwide in true production).
+* **Open Architecture** Systems must "play nice" with other actors and share data using standard tools.
+* **Proven at Scale** This is not for Proofs of Concept (PoC) that only work locally. It is proven to work at scale (1000+ sites worldwide in true production).
 
 ---
 
 ### 5. Contextualized Industrial Data (Taxonomy & Semantics)
 **Over rigid, flat, or non-standardized structures**
 
-Data is only valuable when it is contextualized. We organize information into a structured, agile, and semantic taxonomy.
+Data is only valuable when it is contextualized and organized.
 
-* **Standardized Modeling**: Following ISA/IEC recommendations for factory modeling (Enterprise > Site > Area > Line > Cell > Equipment > Measurement Point), ensuring a common language across the organization.
-* **Agile Taxonomy**: The structure is not set in stone; it is agile and can evolve to include new assets, processes, and metadata without breaking existing integrations.
-* **Ideally Self-Porting**: All information should be self-porting, meaning it contains all the necessary information to understand what it is about without needing to consult external documentation or a person.
+* **ISA/IEC Modeling** Physical modeling follows a hierarchy, for example: Enterprise > Site > Area > Line > Cell > Equipment > Measurement Point. Whatever modeling is chosen, it ensures a common language across the organization.
+* **Agile Taxonomy** This structure is not set in stone; it is agile and can evolve to include new assets, processes, and metadata without breaking existing integrations.
+* **Ideally Self-Porting** Self-porting information allows you to understand what it is about without needing to consult external documentation or a person.

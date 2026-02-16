@@ -104,6 +104,12 @@ main>.content-section:first-child {
     padding-top: 120px;
 }
 
+@media (max-width: 768px) {
+    main>.content-section:first-child {
+        padding-top: 100px;
+    }
+}
+
 .alternate-bg {
     background-color: var(--section-alternate);
 }
@@ -474,6 +480,7 @@ footer a {
 /* Tabs */
 .tab-navigation {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 40px;
     border-bottom: 2px solid #e0e0e0;
@@ -496,6 +503,15 @@ footer a {
 
 .tab-btn:hover {
     color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .tab-btn {
+        padding: 10px 15px;
+        font-size: 1rem;
+        flex: 1 1 auto;
+        text-align: center;
+    }
 }
 
 .tab-btn.active {

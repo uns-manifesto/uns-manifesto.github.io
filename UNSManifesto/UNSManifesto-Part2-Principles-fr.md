@@ -1,9 +1,8 @@
-## Les cinq principes du Unified Namespace
-
+## Le manifeste du Unified Namespace en 5 points
 Inspirés par l'esprit de l'Agile, nous valorisons :
 
 ### 1. Une Architecture Pilotée par les Événements (Event-Driven)
-**Plutôt que des intégrations « spaghetti », fragiles et fortement couplées**
+**Plutôt que des intégrations "spaghetti", fragiles et fortement couplées**
 
 Les systèmes publient les faits au moment où ils se produisent.
 Les consommateurs s'abonnent à ce dont ils ont besoin.
@@ -17,11 +16,11 @@ Plus de dépendances point à point fragiles.
 ### 2. Le Rapport par Exception (RBE)
 **Plutôt que des flux de données massifs et insignifiants**
 
-Seuls les changements significatifs comptent.
+Seuls les changements significatifs clefs.
 Le signal plutôt que le bruit.
 Le contexte plutôt que le volume.
 
-* **Anti-Polling** : Les architectures traditionnelles renvoient toutes les données périodiquement, même les données « Nulles » ou « vides ». Cela sature le réseau à grande échelle et crée des déchets dans les lacs de données. L'UNS élimine ce gaspillage.
+* **Anti-Polling** : Les architectures traditionnelles renvoient toutes les données périodiquement, même les données "Nulles" ou "vides". Cela sature le réseau à grande échelle et crée des déchets dans les lacs de données. L'UNS élimine ce gaspillage.
 
 ---
 
@@ -32,11 +31,11 @@ L'architecture doit évoluer avec l'entreprise.
 Si elle ne peut pas s'adapter rapidement et passer à l'échelle horizontalement, elle s'effondrera sous la complexité.
 
 * **Pub/Sub Léger** : MQTT n'est pas obligatoire mais est presque un « Must Have » au-dessus du Niveau 2. (OPC UA est la norme pour L1/L2).
-* **Pas d'API REST pour le Cœur** : Les API REST sont utilisées pour parler *à* l'UNS, mais ne sont pas la pièce centrale. Le cœur est basé sur les événements.
+* **Pas d'API REST pour le Cœur** : Les API REST sont utilisées pour parler *à* l'UNS si el système n'est pas compatible MQTT.
 
 ---
 
-### 4. Des Standards Ouverts & Interopérables
+### 4. Des standards ouverts & interopérables
 **Plutôt que l'enfermement propriétaire fermé**
 
 L'interopérabilité est la souveraineté.
@@ -50,8 +49,8 @@ Les protocoles ouverts permettent la résilience, l'innovation et la liberté de
 ### 5. Taxonomie, Sémantique et données industrielles contextualisées
 **Plutôt que des structures rigides, à plat ou non standardisées**
 
-La donnée n'a de valeur que lorsqu'elle est contextualisée. Nous organisons l'information dans une taxonomie sémantique, agile et structurée.
+La donnée n'a de valeur que lorsqu'elle est contextualisée et organisée.
 
-* **Modélisation Standardisée** : Suivre les recommandations ISA/IEC pour la modélisation des usines (exemple représentant une modélisation physique : Entreprise > Site > Zone > Ligne > Cellule > Équippement > Point de mesure), garantissant un langage commun à travers l'organisation.
-* **Taxonomie Agile** : La structure n'est pas figée ; elle est agile et peut évoluer pour inclure de nouveaux actifs, processus et métadonnées sans briser les intégrations existantes.
-* **Idéalement auto-descriptive** : Toutes informations doivent être auto-portantes, c'est-à-dire qu'ils doivent contenir toutes les informations nécessaires pour comprendre de quoi il s'agit sans avoir besoin de consulter une documentation ou une personne externe.
+* **Modélisation ISA/IEC** : La modélisation physique suit une hiérarchie, par exemple : Entreprise > Site > Zone > Ligne > Cellule > Équipement > Point de mesure. Quelle que soit la modélidation retenue, cela permet d'avoir un langage commun à travers l'organisation.
+* **Taxonomie Agile** : Cette structure n'est surtout pas figée ; elle est agile et peut évoluer pour inclure de nouveaux actifs, processus et métadonnées sans briser les intégrations existantes.
+* **Idéalement auto-descriptive** : Les informations auto-portantes permettent de comprendre de quoi il s'agit sans avoir besoin de consulter une documentation ou une personne externe.

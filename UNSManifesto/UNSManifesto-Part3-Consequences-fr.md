@@ -19,7 +19,7 @@ Les projets deviennent incrémentaux, et non monolithiques.
 La valeur est délivrée en continu.
 
 ### Outils agnostiques
-Vous choisissez les outils en fonction des besoins, du budget et des contraintes — pas parce que votre architecture ou que le Marketing vous l'impose.
+Vous choisissez les outils en fonction des besoins, du budget et des contraintes, non pas parce que votre architecture ou que le Marketing vous l'impose.
 
 ---
 *Version 2.0 | Ouvert à la contribution et à l'évolution de la communauté*
