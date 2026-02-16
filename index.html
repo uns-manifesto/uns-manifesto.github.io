@@ -51,16 +51,10 @@
                     </select>
                 </div>
                 <ul class="nav-menu">
-                    <li><a href="javascript:void(0);"
-                            onclick="document.getElementById('Resx_Home').scrollIntoView({behavior: 'smooth'})"
-                            data-i18n="nav_intro">Introduction</a></li>
-                    <li><a href="javascript:void(0);"
-                            onclick="document.getElementById('Resx_Principles').scrollIntoView({behavior: 'smooth'})"
-                            data-i18n="nav_principles">Fonctionnement</a></li>
+                    <li><a href="#Resx_Home" data-i18n="nav_intro">Introduction</a></li>
+                    <li><a href="#Resx_Principles" data-i18n="nav_principles">The 4 principles</a></li>
                     <li><a href="sign.html" class="nav-btn-highlight" data-i18n="nav_sign">Sign the Manifesto</a></li>
-                    <li><a href="javascript:void(0);"
-                            onclick="document.getElementById('contact-us').scrollIntoView({behavior: 'smooth'})"
-                            data-i18n="nav_contact">Contact</a></li>
+                    <li><a href="#Resx_contactus" data-i18n="nav_contact">Contact</a></li>
                     <li><a href="about.html" data-i18n="nav_about">About</a></li>
                 </ul>
                 <button class="mobile-menu-btn" aria-label="Menu">
@@ -91,7 +85,7 @@
                                 ecosystem that creates a (near) real-time, shared, contextualized understanding of
                                 operations.
                             </p>
-                            <p data-i18n="hero_framework"><strong>It is a framework — not a tool.</strong></p>
+                            <p data-i18n="hero_framework"><strong>It is a framework, not a tool.</strong></p>
                             <p data-i18n="hero_tools">Tools may enable it. But tools alone will never make it. It is
                                 human
                                 centered, and needs governance.</p>
@@ -112,7 +106,7 @@
             </div>
         </section>
 
-        <section id="contact-us" class="contact-section">
+        <section id="Resx_contactus" class="contact-section">
             <div class="content-wrapper">
                 <h2 data-i18n="contact_title">About us</h2>
                 <p data-i18n="contact_subtitle">This web site is 100% public and 100% Open Source. We value your
@@ -124,6 +118,13 @@
             </div>
         </section>
     </main>
+
+    <!-- Scroll to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to Top">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+            <path fill="currentColor" d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z" />
+        </svg>
+    </button>
 
     <footer>
         <div class="footer-content">

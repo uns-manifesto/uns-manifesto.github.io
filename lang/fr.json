@@ -1,7 +1,7 @@
 {
     "page_title": "Principes de l'UNS - Unified Namespace",
     "nav_intro": "Introduction",
-    "nav_principles": "Fonctionnement",
+    "nav_principles": "Les Quatre Principes",
     "nav_content": "Manifeste",
     "nav_contact": "Contact",
     "nav_about": "À propos",
@@ -10,7 +10,7 @@
     "hero_tagline": "Un cadre pour une industrie évolutive, ouverte et événementielle",
     "hero_philosophy_title": "La philosophie fondamentale",
     "hero_desc": "Un Unified Namespace (UNS) est un écosystème de données structuré, vivant et événementiel qui crée une compréhension partagée et contextualisée des opérations en temps (quasi) réel.",
-    "hero_framework": "C'est un cadre — pas un outil.",
+    "hero_framework": "C'est un cadre, pas un outil.",
     "hero_tools": "Les outils peuvent le permettre. Mais les outils seuls ne suffiront jamais. Il est centré sur l'humain et nécessite une gouvernance.",
     "contact_title": "Nous contacter",
     "contact_subtitle": "Ce site est public et Open Source.",

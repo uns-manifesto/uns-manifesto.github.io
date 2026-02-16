@@ -9,7 +9,7 @@
 
 A Unified Namespace (UNS) is a living, event-driven, structured data ecosystem that creates a (near) real-time, shared, contextualized understanding of operations.
 
-It is a framework — not a tool.
+It is a framework, not a tool.
 
 Tools may enable it. But tools alone will never make it. It is human centered, and needs governance.
 
@@ -44,6 +44,8 @@ You do not “install” a Unified Namespace.
 You **design a Digital Strategy, and grow into it** over the years.
 
 ---
+
+<div id="Resx_Principles"></div>
 
 ## The Four Principles of Unified Namespace
 

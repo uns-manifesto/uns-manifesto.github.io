@@ -42,9 +42,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 const mdText = await mdRes.text();
 
                 // 3. Render Markdown
-                // Clean up the markdown a bit if needed (e.g. remove first H1 if it duplicates hero)
-                // But let's keep it as is for now as requested "inject the files"
                 manifestoContainer.innerHTML = marked.parse(mdText);
+
+                // 4. If URL has a hash, scroll to it after content is loaded
+                if (window.location.hash) {
+                    const targetId = window.location.hash.substring(1);
+                    const targetEl = document.getElementById(targetId);
+                    if (targetEl) {
+                        setTimeout(() => {
+                            targetEl.scrollIntoView({ behavior: 'smooth' });
+                        }, 100); // Small delay to ensure rendering is complete
+                    }
+                }
             }
 
         } catch (error) {
@@ -91,6 +100,26 @@ document.addEventListener('DOMContentLoaded', () => {
                     el.innerText = data[key]; // Or innerHTML if keys contain tags
                 }
             }
+        });
+    }
+
+    // --- Back to Top & Scroll Handling ---
+    const backToTopBtn = document.getElementById('back-to-top');
+
+    if (backToTopBtn) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         });
     }
 });

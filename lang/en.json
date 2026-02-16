@@ -1,7 +1,7 @@
 {
     "page_title": "UNS Principles - Unified Namespace",
     "nav_intro": "Introduction",
-    "nav_principles": "How it Works",
+    "nav_principles": "The Four Principles",
     "nav_content": "Manifesto",
     "nav_contact": "Contact",
     "nav_about": "About",
@@ -10,7 +10,7 @@
     "hero_tagline": "A Framework for Scalable, Open, and Event-Driven Industry",
     "hero_philosophy_title": "The Core Philosophy",
     "hero_desc": "A Unified Namespace (UNS) is a living, event-driven, structured data ecosystem that creates a (near) real-time, shared, contextualized understanding of operations.",
-    "hero_framework": "It is a framework — not a tool.",
+    "hero_framework": "It is a framework, not a tool.",
     "hero_tools": "Tools may enable it. But tools alone will never make it. It is human centered, and needs governance.",
     "contact_title": "Contact Us",
     "contact_subtitle": "This site is public and Open Source.",
