@@ -1,4 +1,4 @@
-## Los cuatro principios del Unified Namespace
+## Los cinco principios del Unified Namespace
 
 Inspirados en el espíritu de Agile, valoramos:
 
@@ -48,3 +48,14 @@ Los protocolos abiertos permiten resiliencia, innovación y libertad de elecció
 
 * **Arquitectura Abierta**: Los sistemas deben "jugar limpio" con otros actores y compartir datos utilizando herramientas estándar.
 * **Probado a Escala**: Esto no es para Pruebas de Concepto (PoC) que solo funcionan localmente. Está probado que funciona a escala (más de 1000 sitios en todo el mundo en producción real).
+
+---
+
+### 5. Taxonomía Semántica y Contextualizada
+**Sobre estructuras rígidas, planas o no estandarizadas**
+
+Los datos solo son valiosos cuando están contextualizados. Organizamos la información en una taxonomía semántica, ágil y estructurada.
+
+* **Modelado Estandarizado**: Siguiendo las recomendaciones de ISA/IEC para el modelado de fábricas (Empresa > Sitio > Área > Línea > Celda > Equipo > Punto de medición), asegurando un lenguaje común en toda la organización.
+* **Taxonomía Ágil**: La estructura no es inamovible; es ágil y puede evolucionar para incluir nuevos activos, procesos y metadatos sin romper las integraciones existentes.
+* **Idealmente autodescriptivo**: Toda la información debe ser autocontenida, es decir, debe contener toda la información necesaria para entender de qué se trata sin necesidad de consultar documentación o a una persona externa.

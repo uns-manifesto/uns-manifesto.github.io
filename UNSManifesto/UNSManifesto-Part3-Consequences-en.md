@@ -18,8 +18,8 @@ Systems evolve without re-engineering the entire architecture.
 Projects become incremental, not monolithic.
 Value is delivered continuously.
 
-### Tool Agnosticism
-You choose tools based on need, budget, and constraints — not because your architecture forces you.
+### Agnostic Tools
+You choose tools based on need, budget, and constraints — not because your architecture or the Marketing forces you.
 
 ---
 *Version 2.0 | Open for community contribution and evolution*

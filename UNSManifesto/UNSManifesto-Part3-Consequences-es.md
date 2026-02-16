@@ -18,8 +18,8 @@ Los sistemas evolucionan sin reingeniería de toda la arquitectura.
 Los proyectos se vuelven incrementales, no monolíticos.
 El valor se entrega continuamente.
 
-### Agnosticismo de Herramientas
-Eliges herramientas basadas en necesidad, presupuesto y restricciones — no porque tu arquitectura te obligue.
+### Herramientas agnósticas
+Eliges herramientas basadas en necesidad, presupuesto y restricciones — no porque tu arquitectura o el Marketing te obligue.
 
 ---
 *Versión 2.0 | Abierto a la contribución y evolución de la comunidad*

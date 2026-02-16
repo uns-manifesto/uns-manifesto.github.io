@@ -1,4 +1,4 @@
-## The Four Principles of Unified Namespace
+## The Five Principles of Unified Namespace
 
 Inspired by the spirit of Agile, we value:
 
@@ -44,3 +44,14 @@ Open protocols enable resilience, innovation, and freedom of choice.
 
 * **Open Architecture**: Systems must "play nice" with other actors and share data using standard tools.
 * **Proven at Scale**: This is not for Proofs of Concept (PoC) that only work locally. It is proven to work at scale (1000+ sites worldwide in true production).
+
+---
+
+### 5. Contextualized Industrial Data (Taxonomy & Semantics)
+**Over rigid, flat, or non-standardized structures**
+
+Data is only valuable when it is contextualized. We organize information into a structured, agile, and semantic taxonomy.
+
+* **Standardized Modeling**: Following ISA/IEC recommendations for factory modeling (Enterprise > Site > Area > Line > Cell > Equipment > Measurement Point), ensuring a common language across the organization.
+* **Agile Taxonomy**: The structure is not set in stone; it is agile and can evolve to include new assets, processes, and metadata without breaking existing integrations.
+* **Ideally Self-Porting**: All information should be self-porting, meaning it contains all the necessary information to understand what it is about without needing to consult external documentation or a person.
