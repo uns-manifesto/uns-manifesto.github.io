@@ -33,19 +33,23 @@ document.addEventListener('DOMContentLoaded', () => {
             const uiData = await uiRes.json();
             applyTranslations(uiData);
 
-            // 2. Load Manifesto Markdown
-            const mdRes = await fetch(`UNSManifesto/UNSManifesto-${lang}.md`);
-            if (!mdRes.ok) throw new Error(`Could not load UNSManifesto-${lang}.md`);
-            const mdText = await mdRes.text();
+            // 2. Load Manifesto Markdown (only if container exists)
+            if (manifestoContainer) {
+                const mdRes = await fetch(`UNSManifesto/UNSManifesto-${lang}.md`);
+                if (!mdRes.ok) throw new Error(`Could not load UNSManifesto-${lang}.md`);
+                const mdText = await mdRes.text();
 
-            // 3. Render Markdown
-            // Clean up the markdown a bit if needed (e.g. remove first H1 if it duplicates hero)
-            // But let's keep it as is for now as requested "inject the files"
-            manifestoContainer.innerHTML = marked.parse(mdText);
+                // 3. Render Markdown
+                // Clean up the markdown a bit if needed (e.g. remove first H1 if it duplicates hero)
+                // But let's keep it as is for now as requested "inject the files"
+                manifestoContainer.innerHTML = marked.parse(mdText);
+            }
 
         } catch (error) {
             console.error('Error loading content:', error);
-            manifestoContainer.innerHTML = `<p class="error">Error loading content. Please check your connection or try again. (${error.message})</p>`;
+            if (manifestoContainer) {
+                manifestoContainer.innerHTML = `<p class="error">Error loading content. Please check your connection or try again. (${error.message})</p>`;
+            }
         }
     }
 

@@ -11,5 +11,10 @@
     "contact_subtitle": "Este sitio es público y de código abierto.",
     "contact_btn": "Ver en GitHub",
     "footer_trans_by": "Traducción UNS por",
-    "footer_license": "#UNSManifesto es de código abierto con la licencia gratuita"
+    "footer_license": "#UNSManifesto es de código abierto con la licencia gratuita",
+    "page_title_sources": "Fuentes - Unified Namespace",
+    "sources_title": "Fuentes de información / Publicaciones",
+    "source_linkedin_1": "Fuente: Definición del Unified Namespace (UNS)",
+    "source_gartner": "Fuente: GARTNER",
+    "back_home": "Volver al inicio"
 }

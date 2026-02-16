@@ -540,3 +540,33 @@ footer a {
         /* Space for hamburger */
     }
 }
+
+/* UI Utility Classes */
+.nav-btn {
+    border: 2px solid var(--primary-color);
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: var(--transition);
+}
+
+.nav-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--white) !important;
+}
+
+.nav-btn:hover::after {
+    display: none;
+    /* Remove underline effect on hover for buttons */
+}
+
+.text-link {
+    font-weight: 600;
+    text-decoration: underline;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.text-link:hover {
+    color: var(--primary-dark);
+}
