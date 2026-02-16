@@ -48,7 +48,30 @@ document.addEventListener('DOMContentLoaded', () => {
         } catch (error) {
             console.error('Error loading content:', error);
             if (manifestoContainer) {
-                manifestoContainer.innerHTML = `<p class="error">Error loading content. Please check your connection or try again. (${error.message})</p>`;
+                // Check if it's a CORS/fetch error (common in localhost)
+                const isCorsError = error.message.includes('fetch') || error.message.includes('CORS');
+
+                if (isCorsError) {
+                    manifestoContainer.innerHTML = `
+                        <div class="error-message" style="text-align: center; padding: 40px; background: #fff3cd; border: 2px solid #ffc107; border-radius: 8px; margin: 20px 0;">
+                            <p style="color: #856404; margin-bottom: 20px;">
+                                The manifesto content cannot be loaded directly from the file system. 
+                                This is a browser security restriction with "CORS".
+                            </p>
+                            <p style="margin-bottom: 20px;">
+                                <strong>Solution:</strong> Click the link below to view the manifesto:
+                            </p>
+                            <a href="UNSManifesto/UNSManifesto-${lang}.md" 
+                               target="_blank" 
+                               class="btn-primary" 
+                               style="display: inline-block; padding: 12px 30px; background: var(--primary-color); color: white; text-decoration: none; border-radius: 25px; font-weight: 600;">
+                                📄 Open UNS Manifesto (${lang.toUpperCase()})
+                            </a>
+                        </div>
+                    `;
+                } else {
+                    manifestoContainer.innerHTML = `<p class="error">Error loading content: ${error.message}</p>`;
+                }
             }
         }
     }

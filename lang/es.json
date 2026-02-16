@@ -4,14 +4,13 @@
     "nav_principles": "Funcionamiento",
     "nav_content": "Manifiesto",
     "nav_contact": "Contacto",
-    "nav_sources": "Fuentes",
+    "nav_about": "Sobre el proyecto",
     "hero_title": "Unified Namespace (UNS)",
     "hero_subtitle": "La arquitectura fundamental para su transformación digital 4.0",
     "hero_desc": "La arquitectura Unified Namespace (UNS) se ha establecido como la arquitectura base para construir su Transformación Digital. El 31 de julio de 2023, Gartner reconoció oficialmente al UNS como arquitectura de referencia, permitiendo una colaboración moderna entre la Tecnología de Operaciones (OT) y la Tecnología de la Información (IT).",
     "contact_title": "Contáctenos",
     "contact_subtitle": "Este sitio es público y de código abierto.",
     "contact_btn": "Ver en GitHub",
-    "footer_trans_by": "Traducción UNS por",
     "footer_license": "#UNSManifesto es de código abierto con la licencia gratuita",
     "page_title_sources": "Fuentes - Unified Namespace",
     "sources_title": "Fuentes de información / Publicaciones",
@@ -24,6 +23,6 @@
     "page_title_sign": "Firmar el Manifiesto - Unified Namespace",
     "sign_title": "Firmar el Manifiesto",
     "sign_intro": "Únete al movimiento por sistemas industriales abiertos, interoperables y escalables. Firma como individuo o en nombre de tu empresa.",
-    "sign_form_heading": "Añade tu firma",
+    "sign_form_heading": "Muestra tu apoyo",
     "sign_list_heading": "Nuestros seguidores"
 }
