@@ -1009,3 +1009,31 @@ footer a {
         grid-template-columns: 1fr;
     }
 }
+
+/* Beta Banner */
+.beta-banner {
+    position: fixed;
+    top: 40px;
+    left: -40px;
+    background: var(--accent-color);
+    color: white;
+    padding: 10px 40px;
+    transform: rotate(-45deg);
+    z-index: 2000;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+    /* Don't block clicks */
+    letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+    .beta-banner {
+        top: 30px;
+        left: -45px;
+        font-size: 0.7rem;
+        padding: 8px 40px;
+    }
+}
