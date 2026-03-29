@@ -206,28 +206,36 @@
         <!-- Reality Check Section -->
         <section class="content-section">
             <div class="content-wrapper">
-                <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <div style="max-width: 900px; margin: 0 auto; text-align: center;">
                     <h2 data-i18n="reality_check_title" style="color: var(--primary-color);">REALITY CHECK</h2>
-                    <p data-i18n="reality_check_subtitle" style="font-size: 1.2rem; font-weight: 600;">There is no silver bullet.</p>
-                    <p data-i18n="reality_check_text_1" style="font-size: 1.1rem;">There is no “one-size-fits-all” UNS.</p>
-                    <p data-i18n="reality_check_text_2">Every implementation is context-driven:</p>
+                    <p style="font-size: 1.1rem; margin-bottom: 30px;">
+                        <span data-i18n="reality_check_subtitle" style="font-weight: 600;">There is no silver bullet</span> | 
+                        <span data-i18n="reality_check_text_1">There is no “one-size-fits-all” UNS</span> | 
+                        <span data-i18n="reality_check_text_2">Every implementation is context-driven:</span>
+                    </p>
                     
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 30px 0; text-align: left;">
-                        <div class="principle-card" style="padding: 20px; border-top: 3px solid var(--accent-color);">
-                            <p data-i18n="reality_check_item_1" style="margin: 0; font-weight: 600;">→ legacy constraints</p>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin: 20px 0; text-align: left;">
+                        <div class="principle-card" style="padding: 15px; border-top: 3px solid var(--accent-color); min-height: auto;">
+                            <p data-i18n="reality_check_item_1" style="margin: 0; font-size: 0.95rem;">→ legacy constraints</p>
                         </div>
-                        <div class="principle-card" style="padding: 20px; border-top: 3px solid var(--accent-color);">
-                            <p data-i18n="reality_check_item_2" style="margin: 0; font-weight: 600;">→ business priorities</p>
+                        <div class="principle-card" style="padding: 15px; border-top: 3px solid var(--accent-color); min-height: auto;">
+                            <p data-i18n="reality_check_item_2" style="margin: 0; font-size: 0.95rem;">→ business priorities</p>
                         </div>
-                        <div class="principle-card" style="padding: 20px; border-top: 3px solid var(--accent-color);">
-                            <p data-i18n="reality_check_item_3" style="margin: 0; font-weight: 600;">→ risk tolerance</p>
+                        <div class="principle-card" style="padding: 15px; border-top: 3px solid var(--accent-color); min-height: auto;">
+                            <p data-i18n="reality_check_item_3" style="margin: 0; font-size: 0.95rem;">→ risk tolerance</p>
                         </div>
-                        <div class="principle-card" style="padding: 20px; border-top: 3px solid var(--accent-color);">
-                            <p data-i18n="reality_check_item_4" style="margin: 0; font-weight: 600;">→ change management maturity</p>
+                        <div class="principle-card" style="padding: 15px; border-top: 3px solid var(--accent-color); min-height: auto;">
+                            <p data-i18n="reality_check_item_4" style="margin: 0; font-size: 0.95rem;">→ change management maturity</p>
+                        </div>
+                        <div class="principle-card" style="padding: 15px; border-top: 3px solid var(--accent-color); min-height: auto;">
+                            <p data-i18n="reality_check_item_5" style="margin: 0; font-size: 0.95rem;">→ technical debt</p>
+                        </div>
+                        <div class="principle-card" style="padding: 15px; border-top: 3px solid var(--accent-color); min-height: auto;">
+                            <p data-i18n="reality_check_item_6" style="margin: 0; font-size: 0.95rem;">→ internal skills & culture</p>
                         </div>
                     </div>
 
-                    <p data-i18n="reality_check_footer" data-i18n-html style="margin-top: 30px; font-size: 1.1rem;">
+                    <p data-i18n="reality_check_footer" data-i18n-html style="margin-top: 25px; font-size: 1.1rem;">
                         Technology choices matter.<br>
                         <strong>But understanding your reality matters more.</strong>
                     </p>
@@ -236,31 +244,22 @@
         </section>
 
         <!-- Invitation Section -->
-        <section id="invitation" class="invitation-section">
+        <section id="invitation" class="invitation-section" style="padding: 60px 0;">
             <div class="content-wrapper">
-                <div class="invitation-card">
-                    <h2 data-i18n="invitation_title">Sign the Unified Namespace Manifesto</h2>
-                    <p class="invitation-subtitle" data-i18n="invitation_subtitle">We invite:</p>
-                    <div class="invitation-grid">
-                        <ul>
-                            <li data-i18n="invitation_leaders">Industrial leaders</li>
-                            <li data-i18n="invitation_integrators">System integrators</li>
-                            <li data-i18n="invitation_vendors">Software vendors</li>
-                        </ul>
-                        <ul>
-                            <li data-i18n="invitation_manufacturers">Hardware manufacturers</li>
-                            <li data-i18n="invitation_architects">Architects</li>
-                            <li data-i18n="invitation_institutions">Public institutions</li>
-                            <li data-i18n="invitation_educators">Educators</li>
-                        </ul>
+                <div class="invitation-card" style="padding: 40px; border-radius: 15px;">
+                    <h2 data-i18n="invitation_title" style="font-size: 2rem; margin-bottom: 10px;">Sign the Unified Namespace Manifesto</h2>
+                    <p data-i18n="invitation_subtitle" style="font-size: 1.1rem; margin-bottom: 25px;">Join the movement for open and scalable industrial systems.</p>
+                    
+                    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-bottom: 25px;">
+                        <span class="btn-primary" style="padding: 8px 15px; font-size: 0.9rem; cursor: default; background: #f0f7ff; color: var(--primary-color); box-shadow: none; border: 1px solid #e0e0e0;" data-i18n="invitation_leaders">Industrial leaders</span>
+                        <span class="btn-primary" style="padding: 8px 15px; font-size: 0.9rem; cursor: default; background: #f0f7ff; color: var(--primary-color); box-shadow: none; border: 1px solid #e0e0e0;" data-i18n="invitation_integrators">System integrators</span>
+                        <span class="btn-primary" style="padding: 8px 15px; font-size: 0.9rem; cursor: default; background: #f0f7ff; color: var(--primary-color); box-shadow: none; border: 1px solid #e0e0e0;" data-i18n="invitation_vendors">Software vendors</span>
+                        <span class="btn-primary" style="padding: 8px 15px; font-size: 0.9rem; cursor: default; background: #f0f7ff; color: var(--primary-color); box-shadow: none; border: 1px solid #e0e0e0;" data-i18n="invitation_manufacturers">Hardware manufacturers</span>
+                        <span class="btn-primary" style="padding: 8px 15px; font-size: 0.9rem; cursor: default; background: #f0f7ff; color: var(--primary-color); box-shadow: none; border: 1px solid #e0e0e0;" data-i18n="invitation_architects">Architects</span>
                     </div>
-                    <div class="invitation-goals">
-                        <p data-i18n="invitation_goal_1">To align around shared principles.</p>
-                        <p data-i18n="invitation_goal_2">To avoid unnecessary complexity.</p>
-                        <p data-i18n="invitation_goal_3">To design systems that will still make sense in 20 years.</p>
-                    </div>
+
                     <div class="invitation-cta">
-                        <a href="sign.html" class="btn-primary" data-i18n="invitation_cta">Sign the Manifesto</a>
+                        <a href="sign.html" class="btn-primary" style="padding: 15px 50px; font-size: 1.1rem;" data-i18n="invitation_cta">Sign the Manifesto</a>
                     </div>
                 </div>
             </div>
