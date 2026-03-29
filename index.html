@@ -84,7 +84,7 @@
             <a href="#Resx_Home" class="logo-link">
                 <img src="images/logo.png" alt="FactoVia Logo" class="logo">
             </a>
-            <nav>
+            <nav id="main-nav">
                 <div class="lang-switcher">
                     <select id="lang-select" aria-label="Language selection" data-lang="en">
                         <option value="en">EN</option>
@@ -93,11 +93,10 @@
                     </select>
                 </div>
                 <ul class="nav-menu">
-                    <li><a href="#Resx_Home" data-i18n="nav_intro">Introduction</a></li>
-                    <li><a href="#Resx_Principles" data-i18n="nav_principles">The 5 principles</a></li>
-                    <li><a href="sign.html" class="nav-btn-highlight" data-i18n="nav_sign">Sign the Manifesto</a></li>
-                    <li><a href="#Resx_contactus" data-i18n="nav_contact">Contact</a></li>
-                    <li><a href="about.html" data-i18n="nav_about">About</a></li>
+                    <li><a href="#Resx_Home">Vision</a></li>
+                    <li><a href="#Resx_Principles">Principles</a></li>
+                    <li><a href="sign.html" class="nav-btn-highlight">Sign the Manifesto</a></li>
+                    <li><a href="#Resx_contactus">About</a></li>
                 </ul>
                 <button class="mobile-menu-btn" aria-label="Menu">
                     <span></span>
@@ -115,26 +114,13 @@
             <div class="content-wrapper">
                 <div class="hero-grid">
                     <div class="hero-text">
-                        <h1 class="hero-title" data-i18n="hero_title">The Unified Namespace Manifesto</h1>
-                        <p class="hero-subtitle" data-i18n="hero_subtitle">#UNSManifesto #UNS</p>
+                        <h1 class="hero-title" data-i18n="vision_title">VISION</h1>
                         <div class="hero-content">
-                            <p data-i18n="hero_tagline"
-                                style="font-style: italic; font-size: 1.1rem; margin-bottom: 20px;">A
-                                Framework for Scalable, Open, and Event-Driven Industry</p>
-                            <h3 data-i18n="hero_philosophy_title" style="margin-top: 30px;">The Core Philosophy</h3>
-                            <p data-i18n="hero_desc">A Unified Namespace (UNS) is a living, event-driven, structured
-                                data
-                                ecosystem that creates a (near) real-time, shared, contextualized understanding of
-                                operations.
-                            </p>
-                            <p data-i18n="hero_framework"><strong>It is a framework, not a tool.</strong></p>
-                            <p data-i18n="hero_tools">Tools may enable it. But tools alone will never make it. It is
-                                human
-                                centered, and needs governance.</p>
-                            <p data-i18n="hero_disclaimer"
-                                style="font-style: italic; color: #b03a2e; margin-top: 20px; font-size: 0.95rem; border: 1px solid #f5b7b1; padding: 12px; background-color: #fdedec; border-radius: 8px;">
-                                This is a document created collectively. If anything is wrong, feel free to adjust it in
-                                the GitHub project.
+                            <p data-i18n="vision_text" style="font-size: 1.25rem; line-height: 1.8;">
+                                We are redefining how industrial data flows across machines, systems, and people.<br>
+                                Not by adding more layers, but by simplifying the whole.<br>
+                                <strong>The Unified Namespace (UNS) is not just an architecture.</strong><br>
+                                It is a shared living understanding of reality, built collaboratively, evolving continuously.
                             </p>
                         </div>
                     </div>
@@ -145,26 +131,97 @@
             </div>
         </section>
 
-        <!-- Part 1: Intro -->
+        <!-- Values Section -->
         <section class="content-section">
-            <div id="manifesto-intro" class="content-wrapper markdown-body">
-                <div class="loading-spinner"></div>
-            </div>
-        </section>
-
-        <!-- Part 2: Principles - Enhanced UI Section -->
-        <section id="Resx_Principles" class="content-section alternate-bg">
             <div class="content-wrapper">
-                <div id="manifesto-principles">
-                    <div class="loading-spinner"></div>
+                <h2 data-i18n="values_title" style="color: var(--primary-color);">VALUES</h2>
+                <p data-i18n="values_subtitle" style="text-align: center; max-width: 800px; margin: 0 auto 40px;">We value:</p>
+                <div class="principles-grid-cards">
+                    <div class="principle-card">
+                        <h3 data-i18n="value_1_title">Reality from the shopfloor</h3>
+                        <p data-i18n="value_1_desc">over assumptions from the ivory tower</p>
+                    </div>
+                    <div class="principle-card">
+                        <h3 data-i18n="value_2_title">Small, immediate improvements</h3>
+                        <p data-i18n="value_2_desc">over large, theoretical transformations</p>
+                    </div>
+                    <div class="principle-card">
+                        <h3 data-i18n="value_3_title">Adaptation to change</h3>
+                        <p data-i18n="value_3_desc">over rigid execution of a fixed plan</p>
+                    </div>
+                    <div class="principle-card">
+                        <h3 data-i18n="value_4_title">Collaboration and feedback loops</h3>
+                        <p data-i18n="value_4_desc">over isolated decision-making</p>
+                    </div>
+                    <div class="principle-card">
+                        <h3 data-i18n="value_5_title">Adoption and change management</h3>
+                        <p data-i18n="value_5_desc">over deploying unused technology</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Part 3: Consequences -->
+        <!-- Principles Section -->
+        <section id="Resx_Principles" class="content-section alternate-bg">
+            <div class="content-wrapper">
+                <h2 data-i18n="principles_title" style="color: var(--primary-color);">PRINCIPLES</h2>
+                <p data-i18n="principles_subtitle" style="text-align: center; max-width: 800px; margin: 0 auto 40px;">These principles are timeless, regardless of technology:</p>
+                <div class="principles-grid-cards">
+                    <div class="principle-card">
+                        <h3 data-i18n="principle_1_title">Report by Exception (RBE)</h3>
+                        <p data-i18n="principle_1_desc">→ Scale by sending only what matters</p>
+                    </div>
+                    <div class="principle-card">
+                        <h3 data-i18n="principle_2_title">Simplicity over complexity</h3>
+                        <p data-i18n="principle_2_desc">→ Lightweight messages, fast understanding</p>
+                    </div>
+                    <div class="principle-card">
+                        <h3 data-i18n="principle_3_title">Open over closed</h3>
+                        <p data-i18n="principle_3_desc">→ No lock-in, full interoperability</p>
+                    </div>
+                    <div class="principle-card">
+                        <h3 data-i18n="principle_4_title">Single Source of Truth (SSoT)</h3>
+                        <p data-i18n="principle_4_desc">→ One shared, trusted reality in near real-time</p>
+                    </div>
+                    <div class="principle-card">
+                        <h3 data-i18n="principle_5_title">Flexible semantics</h3>
+                        <p data-i18n="principle_5_desc">→ Evolving structures over rigid models</p>
+                    </div>
+                    <div class="principle-card">
+                        <h3 data-i18n="principle_6_title">Edge-driven intelligence</h3>
+                        <p data-i18n="principle_6_desc">→ Decisions made as close as possible to reality</p>
+                    </div>
+                    <div class="principle-card">
+                        <h3 data-i18n="principle_7_title">Resilience by design</h3>
+                        <p data-i18n="principle_7_desc">→ Store & Forward over always-connected assumptions</p>
+                    </div>
+                    <div class="principle-card">
+                        <h3 data-i18n="principle_8_title">Loose coupling</h3>
+                        <p data-i18n="principle_8_desc">→ Systems connected, but independent</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reality Check Section -->
         <section class="content-section">
-            <div id="manifesto-consequences" class="content-wrapper markdown-body">
-                <div class="loading-spinner"></div>
+            <div class="content-wrapper">
+                <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                    <h2 data-i18n="reality_check_title" style="color: var(--primary-color);">REALITY CHECK</h2>
+                    <p data-i18n="reality_check_subtitle" style="font-size: 1.2rem; font-weight: 600;">There is no silver bullet.</p>
+                    <p data-i18n="reality_check_text_1" style="font-size: 1.1rem;">There is no “one-size-fits-all” UNS.</p>
+                    <p data-i18n="reality_check_text_2">Every implementation is context-driven:</p>
+                    <ul style="list-style: none; padding: 0; margin: 20px 0; display: inline-block; text-align: left;">
+                        <li data-i18n="reality_check_item_1" style="margin-bottom: 10px;">→ legacy constraints</li>
+                        <li data-i18n="reality_check_item_2" style="margin-bottom: 10px;">→ business priorities</li>
+                        <li data-i18n="reality_check_item_3" style="margin-bottom: 10px;">→ risk tolerance</li>
+                        <li data-i18n="reality_check_item_4" style="margin-bottom: 10px;">→ change management maturity</li>
+                    </ul>
+                    <p data-i18n="reality_check_footer" style="margin-top: 30px; font-size: 1.1rem;">
+                        Technology choices matter.<br>
+                        <strong>But understanding your reality matters more.</strong>
+                    </p>
+                </div>
             </div>
         </section>
 
