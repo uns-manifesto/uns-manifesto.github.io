@@ -113,7 +113,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 } else if (el.tagName === 'IMG') {
                     el.alt = data[key];
                 } else {
-                    el.innerText = data[key]; // Or innerHTML if keys contain tags
+                    // Check if it's meant to be HTML
+                    if (el.hasAttribute('data-i18n-html')) {
+                        el.innerHTML = data[key];
+                    } else {
+                        el.innerText = data[key];
+                    }
                 }
             }
         });
