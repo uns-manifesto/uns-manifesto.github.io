@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Set default language
     let currentLang = localStorage.getItem('uns_lang') || navigator.language.slice(0, 2);
-    if (!['en', 'fr', 'es'].includes(currentLang)) {
+    if (!['en', 'fr', 'es', 'ar'].includes(currentLang)) {
         currentLang = 'en'; // Default fallback
     }
 
@@ -25,8 +25,9 @@ document.addEventListener('DOMContentLoaded', () => {
     loadLanguage(currentLang);
 
     async function loadLanguage(lang) {
-        // Update HTML lang attribute
+        // Update HTML lang attribute and direction for Arabic
         document.documentElement.lang = lang;
+        document.documentElement.dir = (lang === 'ar' ? 'rtl' : 'ltr');
 
         try {
             // 1. Load UI strings
