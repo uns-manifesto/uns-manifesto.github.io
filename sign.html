@@ -62,9 +62,9 @@
     <header id="main-header">
         <div class="header-container">
             <a href="index.html" class="logo-link">
-                <img src="images/logo.png" alt="FactoVia Logo" class="logo">
+                <img src="images/(C)FactoVia_UNSSpiderSchema.webp" alt="UNS Spider Schema Logo" class="logo">
             </a>
-            <nav>
+            <nav id="main-nav">
                 <div class="lang-switcher">
                     <select id="lang-select" aria-label="Language selection" data-lang="en">
                         <option value="en">EN</option>
@@ -74,9 +74,16 @@
                     </select>
                 </div>
                 <ul class="nav-menu">
+                    <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                    <li><a href="about.html" data-i18n="nav_about">About</a></li>
+                    <li><a href="expectations.html" data-i18n="nav_expectations">Expectations</a></li>
                     <li><a href="sign.html" class="nav-btn-highlight" data-i18n="nav_sign">Sign the Manifesto</a></li>
-                    <li><a href="index.html" class="nav-btn" data-i18n="back_home">Back to Home</a></li>
                 </ul>
+                <button class="mobile-menu-btn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </nav>
         </div>
     </header>
